@@ -38,7 +38,7 @@ const FAQ = () => {
     return (
         <div className="w-full h-screen flex items-center justify-center p-4 py-10">
             <div className='space-y-10 container'>
-                <h2 className='text-2xl font-bold text-center'>Frequently Asked Questions</h2>
+            <h2 className="text-4xl font-extrabold text-green-900 text-center">Frequently Asked Questions</h2>
                 <section className='w-full'>
                     {Questions.map((question, index) => (
                         <section key={index} className='z-10'>
