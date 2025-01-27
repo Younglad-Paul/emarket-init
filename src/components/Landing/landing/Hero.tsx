@@ -12,37 +12,37 @@ const Hero = () => {
   const slides = [
     { 
       img: Background2, 
-      title: 'Welcome to Enugu North eMarket' ,
+      title: 'WELCOME TO ENUGU NORTH eMARKET' ,
       content: "Join an innovative network that powers marketing initiatives and contributes to the region's economic development through valuable census data.",
       button: 'Get Started',
       button_link: '#'
     },
     { 
       img: Background5, 
-      title: 'Welcome to Enugu North eMarket' ,
+      title: 'WELCOME TO ENUGU NORTH eMARKET' ,
       content: "Join an innovative network that powers marketing initiatives and contributes to the region's economic development through valuable census data.",
-      button: 'Get Started',
+      button: 'Search',
       button_link: '#'
     },
     { 
       img: Background3, 
-      title: 'Welcome to Enugu North eMarket' ,
+      title: 'WELCOME TO ENUGU NORTH eMARKET' ,
       content: "Join an innovative network that powers marketing initiatives and contributes to the region's economic development through valuable census data.",
-      button: 'Get Started',
-      button_link: '#'
+      button: 'Login',
+      button_link: '/login'
     },
     { 
       img: Background4,  
-      title: 'Become a Field Agent' ,
+      title: 'BECOME AN AGENT' ,
       content: "Join an innovative network that powers marketing initiatives and contributes to the region's economic development through valuable census data.",
-      button: 'Get Started',
+      button: 'Learn More',
       button_link: '#'
     },
     { 
       img: Background1,
-      title: 'Welcome to Enugu North eMarket' ,
+      title: 'WELCOME TO ENUGU NORTH eMARKET' ,
       content: "Join an innovative network that powers marketing initiatives and contributes to the region's economic development through valuable census data.",
-      button: 'Get Started',
+      button: 'Pay Tax',
       button_link: '#'
     },
   ];
