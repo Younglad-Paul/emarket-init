@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import logo from '../../public/logo.png';
 import { Headset, Home, LogIn, MessageCircleMore, SearchCheck, User } from 'lucide-react';
-import { BsQuestion } from 'react-icons/bs';
 
 export default function Nav() {
   const [scrolling, setScrolling] = useState(false);
