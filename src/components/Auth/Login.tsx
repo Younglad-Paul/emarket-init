@@ -1,6 +1,11 @@
 import Image from '../../public/policy2.jpg'
 import Logo from '../../public/logo.png'
+import { useNavigate } from 'react-router-dom'
 const Login = () => {
+const navigate = useNavigate()
+  const handleSubmit = ()=>{
+    navigate('/dashboard')
+  }
 
   return (
     <div className='h-screen  grid grid-cols-2'>
@@ -25,7 +30,7 @@ const Login = () => {
                   <label htmlFor='email' >Password:</label>
                   <input type='password' className='w-full border-2 p-2 border-green-900 rounded-lg focus:outline-none' />
                 </div>
-                <button className='w-full p-2 text-center font-semibold my-4 bg-green-900 hover:bg-green-800 text-white rounded-lg'>Password</button>
+                <button onClick={handleSubmit} className='w-full p-2 text-center font-semibold my-4 bg-green-900 hover:bg-green-800 text-white rounded-lg'>Password</button>
               </section>
             </div>
           </section>
