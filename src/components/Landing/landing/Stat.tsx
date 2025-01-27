@@ -3,14 +3,78 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import stat from '../../../public/landing5.jpg';
+import { useEffect, useState, useRef } from 'react';
+
+import stat1 from '../../../public/landing5.jpg';
 import stat2 from '../../../public/landing1.jpg';
 import stat3 from '../../../public/landing4.jpg';
 
+interface GalleryItem {
+    image: string;
+    name: string;
+}
+
+interface CounterProps {
+    stat: number;
+    duration?: number;
+}
+
+const Counter = ({ stat, duration = 1000 }: CounterProps) => {
+    const [count, setCount] = useState(0);
+    const [isVisible, setIsVisible] = useState(false);
+    const counterRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries[0].isIntersecting && !isVisible) {
+                    setIsVisible(true);
+                }
+            },
+            { threshold: 0.1 }
+        );
+    
+        const currentRef = counterRef.current;
+    
+        if (currentRef) {
+            observer.observe(currentRef);
+        }
+    
+        return () => {
+            if (currentRef) {
+                observer.unobserve(currentRef);
+            }
+        };
+    }, [isVisible]);
+    
+
+    useEffect(() => {
+        if (!isVisible) return;
+
+        const startTime = performance.now();
+
+        const animateCounter = (currentTime: number) => {
+            const elapsedTime = currentTime - startTime;
+            const progress = Math.min(elapsedTime / duration, 1);
+            const value = Math.round(progress * stat);
+
+            setCount(value);
+
+            if (progress < 1) {
+                requestAnimationFrame(animateCounter);
+            }
+        };
+
+        requestAnimationFrame(animateCounter);
+    }, [stat, duration, isVisible]);
+
+    return <span ref={counterRef}>{count}</span>;
+};
+
 const Stat = () => {
-    const Gallery = [
+    const Gallery: GalleryItem[] = [
         {
-            image: stat,
+            image: stat1,
             name: 'market 1',
         },
         {
@@ -18,8 +82,8 @@ const Stat = () => {
             name: 'market 2',
         },
         {
-            image: stat3,
-            name: 'market 2',
+            image: stat3 ,
+            name: 'market 3',
         },
     ];
 
@@ -34,8 +98,12 @@ const Stat = () => {
                         </p>
                         <div className="flex text-2xl">
                             <p>
-                                <span className="text-green-500">10,452+</span> businesses registered across{' '}
-                                <span className="text-green-500">27</span> local markets
+                                <span className="text-green-500">
+                                    <Counter stat={10452} duration={2000} />+
+                                </span> businesses registered across{' '}
+                                <span className="text-green-500">
+                                    <Counter stat={27} duration={1500} />
+                                </span> local markets
                             </p>
                         </div>
                         <button className="p-3 px-6 bg-white text-green-900 font-semibold rounded-lg hover:bg-gray-200 transition">
@@ -48,13 +116,16 @@ const Stat = () => {
                             spaceBetween={50}
                             slidesPerView={1}
                             pagination={{ clickable: true }}
-                            // scrollbar={{ draggable: true }}
                             autoplay={{ delay: 5000, disableOnInteraction: false }}
                             loop={true}
                         >
                             {Gallery.map((gallery, index) => (
                                 <SwiperSlide key={index}>
-                                    <img src={gallery.image} className="rounded-md w-full h-full" alt={gallery.name} />
+                                    <img 
+                                        src={gallery.image} 
+                                        className="rounded-md w-full h-full" 
+                                        alt={gallery.name} 
+                                    />
                                 </SwiperSlide>
                             ))}
                         </Swiper>
