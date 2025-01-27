@@ -8,6 +8,7 @@ import { useEffect, useState, useRef } from 'react';
 import stat1 from '../../../public/landing5.jpg';
 import stat2 from '../../../public/landing1.jpg';
 import stat3 from '../../../public/landing4.jpg';
+import { TbBackground } from 'react-icons/tb';
 
 interface GalleryItem {
     image: string;
@@ -118,15 +119,11 @@ const Stat = () => {
                             pagination={{ clickable: true }}
                             autoplay={{ delay: 5000, disableOnInteraction: false }}
                             loop={true}
+                            className='border-2 border-dashed border-gray-400 rounded-md'
                         >
                             {Gallery.map((gallery, index) => (
-                                <SwiperSlide key={index}>
-                                    <img 
-                                        src={gallery.image} 
-                                        className="rounded-md w-full h-full" 
-                                        alt={gallery.name} 
-                                    />
-                                </SwiperSlide>
+                                <SwiperSlide key={index} className='w-full h-96' style={{background: `url(${gallery.image}) no-repeat`, backgroundSize: 'cover'}} />
+                                
                             ))}
                         </Swiper>
                     </div>

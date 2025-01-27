@@ -6,14 +6,12 @@ import Nav from './Utility/Sidebar';
 import Home from './Home/DashboardHome';
 import Form from './Home/Form';
 import Owners from './Home/Owners';
-// import Gallery from '@/Dashboard/Store/Store';
-// import Profile from '@/Dashboard/Profile/Profile';
 import Market from './Home/Market';
-// import EditProfile from '@/Dashboard/Profile/EditProfile';
 // import MobileNav from '@/Dashboard/Layout/MobileNav';
 import { useState } from 'react';
 import Store from './Home/Store';
 import Profile from './Home/Profile';
+import EditProfile from './Home/EditProfile';
 
 // const isAuthenticated = () => {
 //   return localStorage.getItem('authToken') !== null;
@@ -45,7 +43,7 @@ const DashbardLayout = () => {
               <Route path="registered-users" element={<Owners />} />
               <Route path="store" element={<Store />} />
               <Route path="profile" element={<Profile />} />
-              {/* <Route path="edit-profile" element={<EditProfile />} /> */}
+              <Route path="edit-profile" element={<EditProfile />} />
             </Routes>
           </main>
         </section>

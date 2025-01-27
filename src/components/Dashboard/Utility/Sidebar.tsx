@@ -16,8 +16,8 @@ const Sidebar = () => {
           <Link
             key={index}
             to={nav.link}
-            className={`w-full bg-opacity-20 p-2 rounded-md hover:bg-opacity-30 px-6 flex items-center gap-2 ${
-              location.pathname === nav.link ? "bg-green-500" : "bg-transparent"
+            className={`w-full hover:bg-green-500 bg-opacity-20 p-2 rounded-md hover:bg-opacity-30 px-6 flex items-center gap-2 ${
+              location.pathname === nav.link ? "bg-yellow-500 hover:bg-yellow-500" : "bg-transparent"
             }`}
           >
             {nav.icon} {nav.name}

@@ -1,5 +1,13 @@
 import { ChevronLeft, ChevronRight, Info, Plus } from "lucide-react";
 import { Link } from "react-router-dom";
+import {
+    Table,
+    TableHeader,
+    TableBody,
+    TableRow,
+    TableHead,
+    TableCell,
+  } from "../Comp/table"; 
 
 const Store = () => {
   const Users = [
@@ -155,36 +163,43 @@ const Store = () => {
             Register Owner
           </Link>
         </div>
-        <table className="w-full lg:table-auto overflow-hidden">
-          <thead className="w-full">
-            <tr className="w-full bg-green-900 text-center text-white flex items-center">
-              <th className="py-4 lg:px-4 w-full">ID</th>
-              <th className="py-2 lg:px-4 w-full">Name</th>
-              <th className="py-2 lg:px-4 w-full">Address</th>
-              <th className="py-2 lg:px-4 w-full">Date</th>
-              <th className="py-2 lg:px-4 w-full">Action</th>
-            </tr>
-          </thead>
-          <tbody className="w-full">
+        <Table className="w-full lg:table-auto overflow-hidden mt-5 rounded-md shadow-md">
+          <TableHeader>
+            <TableRow className="bg-green-900 text-white text-center">
+              <TableHead className="py-4 lg:px-4 text-sm font-medium">ID</TableHead>
+              <TableHead className="py-2 lg:px-4 text-sm font-medium">Store</TableHead>
+              <TableHead className="py-2 lg:px-4 text-sm font-medium">Address</TableHead>
+              <TableHead className="py-2 lg:px-4 text-sm font-medium">Name</TableHead>
+              <TableHead className="py-2 lg:px-4 text-sm font-medium">Date</TableHead>
+              <TableHead className="py-2 lg:px-4 text-sm font-medium">Action</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
             {Users.map((user, index) => (
-              <tr key={index} className="w-full border-b flex items-cemter text-center gap-2">
-                <td className="lg:px-4 py-2 lg:w-full">{user.reg}</td>
-                <td className="lg:px-4 py-2 lg:w-full">{user.name}</td>
-                <td className="lg:px-4 py-2 w-full">{user.address}</td>
-                <td className="lg:px-4 py-2 lg:w-full">{user.date}</td>
-                <td className="lg:px-4 py-2 flex  justify-center lg:w-full">
-                  <button className="text-white bg-green-900 hover:bg-green-800 p-2 lg:px-4 rounded-lg flex items-center justify-center gap-2 h-10">
+              <TableRow key={index} className="border-b hover:bg-gray-100 transition-colors">
+                <TableCell className="lg:px-4 py-2 text-sm">{user.reg}</TableCell>
+                <TableCell className="lg:px-4 py-2 text-sm">{user.store}</TableCell>
+                <TableCell className="lg:px-4 py-2 text-sm">{user.address}</TableCell>
+                <TableCell className="lg:px-4 py-2 text-sm">{user.name}</TableCell>
+                <TableCell className="lg:px-4 py-2 text-sm">{user.date}</TableCell>
+                <TableCell className="lg:px-4 py-2 flex">
+                  <button className="text-white bg-green-900 hover:bg-green-800 p-2 lg:px-4 rounded-lg flex items-center justify-center gap-2 h-10 text-sm">
                     <Info size={15} /> More
                   </button>
-                </td>
-              </tr>
+                </TableCell>
+              </TableRow>
             ))}
-          </tbody>
-        </table>
+          </TableBody>
+        </Table>
+
         <div className="w-full flex items-center justify-end p-4 gap-4">
-          <p className="flex items-center hover:text-green-500 cursor-pointer"><ChevronLeft /> Prev</p>
-          <p className="bg-green-900 p-2 text-white rounded-md">20 of 50</p>
-          <p className="flex items-center hover:text-green-500 cursor-pointer">Next <ChevronRight /></p>
+          <p className="flex items-center hover:text-green-500 cursor-pointer text-sm">
+            <ChevronLeft /> Prev
+          </p>
+          <p className="bg-green-900 p-2 text-white rounded-md text-sm">8</p>
+          <p className="flex items-center hover:text-green-500 cursor-pointer text-sm">
+            Next <ChevronRight />
+          </p>
         </div>
       </section>
     </div>
