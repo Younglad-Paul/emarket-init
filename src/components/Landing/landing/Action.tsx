@@ -1,12 +1,8 @@
-import { FaIdCard } from "react-icons/fa";
-import { RiUserSearchFill, RiVerifiedBadgeFill } from "react-icons/ri";
-import { MdPayments } from "react-icons/md";
-import { ScrollText } from 'lucide-react';
 import { motion } from "framer-motion";
-import Verify from '../../../public/reg.png';
-import Seach from '../../../public/search.png';
-import Reg from '../../../public/icon1.png';
-import Tax from '../../../public/tax.png';
+import Verify from '../../../public/cert.svg';
+import Seach from '../../../public/search.svg';
+import Reg from '../../../public/certify.svg';
+import Tax from '../../../public/register.svg';
 
 export default function Action() {
     const Cards = [
@@ -34,23 +30,6 @@ export default function Action() {
 
     return (
         <div className="container p-12 text-center text-md py-20">
-            {/* <h1 className="text-4xl font-extrabold text-green-900 mb-4">Government</h1>
-            <p className="text-lg text-green-500 max-w-2xl mx-auto mb-8">
-                We Work for You! Get clear information, access services efficiently, and contribute to a better tomorrow.
-            </p>
-
-            <div className="grid grid-cols-2 gap-8 justify-center">
-                <div className="p-6 border-2 border-green-400 text-green-500 hover:bg-green-100 transition-all">
-                    <h2 className="text-2xl font-bold mb-4">Monitoria</h2>
-                    <p className="text-sm">Local Government Authority</p>
-                </div>
-                <div className="p-6 border-2 border-green-400 text-green-500 hover:bg-green-100 transition-all">
-                    <h2 className="text-2xl font-bold mb-4">Legislature</h2>
-                    <p className="text-sm">Encyg Zibala Geographic Information System</p>
-                    <p className="text-sm">Security Trust/Indi</p>
-                </div>
-            </div> */}
-
             <h2 className="text-4xl font-extrabold text-green-900 text-center">Business</h2>
             <p className="text-lg max-w-2xl mx-auto mb-8">
                 Experience Enugu State’s online platform, facilitating efficient, transparent, 
@@ -76,7 +55,7 @@ export default function Action() {
                                 {card.image}
                             </div>
                         </div>
-                        <p className="text-sm font-medium text-green-500 mt-2">{card.text}</p>
+                        <p className="text-sm font-medium text-gray-400">{card.text}</p>
                     </motion.div>
                 ))}
             </div>

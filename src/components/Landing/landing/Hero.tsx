@@ -74,9 +74,9 @@ export default function Hero() {
           >
             <div className="w-full h-screen flex items-center bg-black bg-opacity-70">
               <section className='container grid grid-cols-2'>
-              <div className=" flex flex-col items-start mb-20 space-y-6 pr-40 ">
+              <div className=" flex flex-col items-center lg:items-start mb-20 space-y-6 lg:pr-40 ">
                 <motion.h1
-                  className="text-4xl font-bold uppercase text-[#13802AFF]"
+                  className="text-lg lg:text-4xl font-bold uppercase text-[#13802AFF]"
                   initial="hidden"
                   whileInView="visible"
                   variants={textVariants}
