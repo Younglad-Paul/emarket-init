@@ -1,12 +1,12 @@
 import agent from '../../../public/landing4.jpg'
 const Locate = () => {
     return (
-      <div className="w-full flex items-center justify-center p-10 bg-green-900 text-white ">
+      <div className="w-full flex items-center justify-center p-10 bg-[#13802AFF] text-white ">
         <div className="space-y-10 container p-4">
           <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center ">
             {/* Image Placeholder */}
             <div className="flex justify-center">
-              <div className="w-full h-[30rem] bg-gray-300 text-gray-700 flex items-center justify-center text-lg border-2 border-dashed border-gray-400 rounded-md">
+              <div className="w-full h-[30rem] bg-gray-300 text-gray-700 flex items-center justify-center text-lg  rounded-md">
                 <img src={agent} className='w-full h-full rounded-md'/>
               </div>
             </div>

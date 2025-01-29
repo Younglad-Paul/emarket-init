@@ -5,19 +5,21 @@ import FAQ from './landing/FAQ'
 import Stat from './landing/Stat'
 import Locate from './landing/Locate'
 import Assistance from './landing/Assistance'
+import News from './landing/News'
 
 const Landing = () => {
   return (
     <div className='bg-gray-50'>
-      <div className='h-[100vh]'>
         <Hero />
-      </div>
-      <div className='p-10 container grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
-        <About />
+      {/* <div className='p-10 container grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'> */}
         <Action />
-      </div>
+        <About />
+      {/* </div> */}
       <Locate />
+      <div className='p-10 container grid grid-cols-1 lg:grid-cols-2 gap-10'>
       <FAQ />
+      <News />
+      </div>
       <Stat />
       <Assistance />
     </div>

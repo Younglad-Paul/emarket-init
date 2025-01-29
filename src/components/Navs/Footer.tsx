@@ -2,9 +2,9 @@ import logo from '../../public/logo.png'
 export default function Footer
   () {
   return (
-    <div className='w-full lg:h-[40svh] bg-green-900' >
+    <div className='w-full lg:h-[40svh] bg-[#13802AFF]' >
       <section className="w-full flex items-center justify-center">
-        <div className="w-[1400px] p-2 text-start bg-green-900 text-white space-y-4 py-16 flex text-white">
+        <div className="w-[1400px] p-2 text-start  text-white space-y-4 py-16 flex text-white">
                     <div className="container mx-auto px-4 w-full gap-10">
                         <div className=" grid md:grid-cols-5 gap-8">
                             <div className="">

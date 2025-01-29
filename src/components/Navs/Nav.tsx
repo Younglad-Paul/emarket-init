@@ -19,40 +19,37 @@ export default function Nav() {
   }, []);
 
   return (
+    <div className='h-[70px]'>
     <div
-      className={`fixed w-full text-white font-semibold p-2 z-10 transition-all ${
-        scrolling ? 'bg-green-900' : 'bg-opacity-60'
+      className={`bg-[#13802AFF] w-full text-white p-2 z-10 transition-all ${
+        scrolling ? 'fixed' : 'relative'
       }`}
     >
       <div className="container flex items-center justify-between">
-        <img src={logo} alt="Logo" className="w-28" />
-        <div className="flex items-center gap-10 bg-green-900 bg-opacity-60 p-2 px-6 rounded-md">
+        <img src={logo} alt="Logo" className="w-16" />
+        <div className="flex items-center gap-10 p-2 px-6 rounded-md">
         <a href="/" className="hover:text-yellow-500 flex items-center gap-2">
-        <Home />
             Home
           </a>
           <a href="/" className="hover:text-yellow-500 flex items-center gap-2">
-          <User />
             About
           </a>
           <a href="/" className="hover:text-yellow-500 flex items-center gap-2">
-          <MessageCircleMore />
             FAQ
           </a>
           <a href="/" className="hover:text-yellow-500 flex items-center gap-2">
-          <SearchCheck />
             Search
           </a>
           <a href="/" className="hover:text-yellow-500 flex items-center gap-2">
-          <Headset />
             Contact us
           </a>
-        </div>
-          <a href="/login" className="flex items-center gap-2 bg-yellow-500 hover:bg-yellow-400 p-2 px-4 text-green rounded-lg">
+          <a href="/login" className="flex items-center gap-2 bg-yellow-600 hover:bg-yellow-400 p-2 px-4 text-green rounded-lg">
           <LogIn />
             Login
           </a>
+        </div>
       </div>
+    </div>
     </div>
   );
 }

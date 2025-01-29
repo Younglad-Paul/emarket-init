@@ -1,114 +1,111 @@
-import { useEffect, useRef } from 'react';
-import Background1 from '../../../public/landing1.jpg'
-import Background2 from '../../../public/landing_default.jpg'
-import Background3 from '../../../public/landing2a.jpg'
-import Background4 from '../../../public/landing3.jpg'
-import Background5 from '../../../public/landing4.jpg'
-import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import Background1 from '../../../public/landing1.jpg';
+import Background2 from '../../../public/landing_default.jpg';
+import Background3 from '../../../public/landing2a.jpg';
+import Background4 from '../../../public/landing3.jpg';
+import Background5 from '../../../public/landing4.jpg';
+import { ArrowDown } from 'lucide-react';
+import { Pagination, A11y, Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
-const Hero = () => {
-  const slideRef = useRef<HTMLDivElement | null>(null); 
-
+export default function Hero() {
   const slides = [
-    { 
-      img: Background2, 
-      title: 'WELCOME TO ENUGU NORTH eMARKET' ,
-      content: "Join an innovative network that powers marketing initiatives and contributes to the region's economic development through valuable census data.",
+    {
+      img: Background2,
+      title: 'WELCOME TO ENUGU NORTH eMARKET',
+      content:
+        "Join an innovative network that powers marketing initiatives and contributes to the region's economic development through valuable census data.",
       button: 'Get Started',
-      button_link: '#'
+      button_link: '#',
     },
-    { 
-      img: Background5, 
-      title: 'WELCOME TO ENUGU NORTH eMARKET' ,
-      content: "Join an innovative network that powers marketing initiatives and contributes to the region's economic development through valuable census data.",
-      button: 'Search',
-      button_link: '#'
+    {
+      img: Background3,
+      title: 'EMPOWER LOCAL BUSINESSES',
+      content:
+        "Access tools and resources that help businesses thrive, creating a more vibrant and prosperous community for everyone.",
+      button: 'Get Started',
+      button_link: '#',
     },
-    { 
-      img: Background3, 
-      title: 'WELCOME TO ENUGU NORTH eMARKET' ,
-      content: "Join an innovative network that powers marketing initiatives and contributes to the region's economic development through valuable census data.",
-      button: 'Login',
-      button_link: '/login'
-    },
-    { 
-      img: Background4,  
-      title: 'BECOME AN AGENT' ,
-      content: "Join an innovative network that powers marketing initiatives and contributes to the region's economic development through valuable census data.",
+    {
+      img: Background4,
+      title: 'BECOME AN AGENT',
+      content:
+        "Empower your community by joining a network of agents driving development and contributing to economic transformation.",
       button: 'Learn More',
-      button_link: '#'
+      button_link: '#',
     },
-    { 
+    {
       img: Background1,
-      title: 'WELCOME TO ENUGU NORTH eMARKET' ,
-      content: "Join an innovative network that powers marketing initiatives and contributes to the region's economic development through valuable census data.",
+      title: 'SUPPORT LOCAL GOVERNANCE',
+      content:
+        "Participate in initiatives like tax payment and governance support, contributing to a thriving regional economy.",
       button: 'Pay Tax',
-      button_link: '#'
+      button_link: '#',
     },
   ];
 
-  const nextSlide = () => {
-    if (slideRef.current) { 
-      const items = document.querySelectorAll('.item');
-      slideRef.current.appendChild(items[0]); 
-    }
+  const textVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' } },
   };
 
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 10000); 
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <div className="container">
-      <div className="slide" ref={slideRef}>
+    <section className="w-full h-[80vh] text-white">
+      <Swiper
+        modules={[Pagination, A11y, Autoplay ]}
+        spaceBetween={0}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        loop={true}
+        className=""
+      >
         {slides.map((slide, index) => (
-          <div
-            className="item"
-            style={{ backgroundImage: `url(${slide.img})` }}
+          <SwiperSlide
             key={index}
+            className="w-full h-[80vh]"
+            style={{
+              background: `url(${slide.img}) no-repeat center`,
+              backgroundSize: 'cover',
+            }}
           >
-            <div className="content bg-green-900 p-6  bg-opacity-80">
-              <div className="name">{slide.title}</div>
-              <div className="des">
-                {slide.content}
+            <div className="w-full h-screen flex items-center bg-black bg-opacity-70">
+              <section className='container grid grid-cols-2'>
+              <div className=" flex flex-col items-start mb-20 space-y-6 pr-40 ">
+                <motion.h1
+                  className="text-4xl font-bold uppercase text-[#13802AFF]"
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={textVariants}
+                >
+                  {slide.title}
+                </motion.h1>
+                <motion.p
+                  className="text-md"
+                  initial="hidden"
+                  animate="visible"
+                  variants={textVariants}
+                >
+                  {slide.content}
+                </motion.p>
+                <motion.a
+                  href={slide.button_link}
+                  className="bg-white text-black font-bold text-sm py-3 px-6 rounded-lg hover:bg-gray-200 transition"
+                  initial="hidden"
+                  animate="visible"
+                  variants={textVariants}
+                >
+                  {slide.button}
+                </motion.a>
               </div>
-              <Link to={slide.button_link} className='bg-white font-semibold p-4 px-8 rounded-md  text-green-900'>{slide?.button}</Link>
+              </section>
             </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
-    </div>
+      </Swiper>
+    </section>
   );
-};
-
-export default Hero;
-
-
-
-// import { ArrowDown } from 'lucide-react'
-// import background from '../../../public/landing_default.jpg'
-
-// export default function Hero() {
-//   return (
-//     <section className='w-full h-screen text-white' 
-//     style={{backgroundImage: url(${background}), backgroundRepeat: "no-repeat, no-repeat", backgroundSize: "cover"}}
-//     >
-//       <div className='w-full h-screen flex items-end bg-black bg-opacity-70'>
-//         <div className='container flex'>
-//         <div className='w-7/12 h-20vh mb-20'>
-//         <div className='mt-16 space-y-4'>
-//         <h1 className='uppercase text-5xl'>Welcome to Enugu North eMarket</h1>
-//         <p>Become part of an innovative network, drive your marketing initiatives, and contribute to valuable census data for the region&apos;s economic growth.</p>
-//         <button className='bg-white text-black font-bold text-xl p-4 rounded-lg '>Get Started</button>
-//         </div>
-//       </div>
-//       <div className='flex items-end pb-20 justify-end  w-7/12'>
-//         <ArrowDown />
-//       </div>
-//       </div>
-//       </div>
-//     </section>
-//   )
-// }
+}

@@ -29,6 +29,14 @@ const FAQ = () => {
             question: "How secure is my data?",
             answer: "Health Verify ensures your data is securely encrypted and protected. Microsoft and our third-party vendors use cookies to store and access information such as unique IDs to deliver, maintain and improve our services and ads. If you agree, MSN and Microsoft Bing will personalise the content and ads that you see. You can select ‘I Accept’ to consent to these uses or click on ‘Manage preferences’ to review your options and exercise your right to object to Legitimate Interest where used.  You can change your selection under ‘Manage Preferences’ at the bottom of this pag",
         },
+        {
+            question: "How secure is my data?",
+            answer: "Health Verify ensures your data is securely encrypted and protected. Microsoft and our third-party vendors use cookies to store and access information such as unique IDs to deliver, maintain and improve our services and ads. If you agree, MSN and Microsoft Bing will personalise the content and ads that you see. You can select ‘I Accept’ to consent to these uses or click on ‘Manage preferences’ to review your options and exercise your right to object to Legitimate Interest where used.  You can change your selection under ‘Manage Preferences’ at the bottom of this pag",
+        },
+        {
+            question: "How secure is my data?",
+            answer: "Health Verify ensures your data is securely encrypted and protected. Microsoft and our third-party vendors use cookies to store and access information such as unique IDs to deliver, maintain and improve our services and ads. If you agree, MSN and Microsoft Bing will personalise the content and ads that you see. You can select ‘I Accept’ to consent to these uses or click on ‘Manage preferences’ to review your options and exercise your right to object to Legitimate Interest where used.  You can change your selection under ‘Manage Preferences’ at the bottom of this pag",
+        },
     ];
 
     const toggleModal = (index: any) => {
@@ -36,13 +44,13 @@ const FAQ = () => {
     };
 
     return (
-        <div className="w-full h-screen flex items-center justify-center p-4 py-10">
+        <div className="w-full flex justify-center px-4 ">
             <div className='space-y-10 container'>
-            <h2 className="text-4xl font-extrabold text-green-900 text-center">Frequently Asked Questions</h2>
-                <section className='w-full'>
+            <h2 className="text-4xl font-extrabold text-green-900 text-center">FAQ</h2>
+                <section className='w-full pt-10'>
                     {Questions.map((question, index) => (
                         <section key={index} className='z-10'>
-                            <div className='border-b bg-green-600 text-white font-semibold p-2 lg:px-10 mt-2 flex items-center justify-between lg:text-lg cursor-pointer' onClick={() => toggleModal(index)} >{question.question} {modal === index ? <ChevronLeft /> : <ChevronDown />}</div>
+                            <div className='border-b p-2 mt-2 flex items-center justify-between lg:text-lg cursor-pointer' onClick={() => toggleModal(index)} >{question.question} {modal === index ? <ChevronLeft /> : <ChevronDown />}</div>
                             <motion.div className='bg-green-300 bg-opacity-20 backdrop-blur-md text-justify'
                                 initial={{ overflowY: 'hidden', height: 0 }}
                                 animate={modal === index? { height: 'auto' } : { overflowY: 'hidden', height: 0 }}

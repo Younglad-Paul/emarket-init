@@ -18,7 +18,7 @@ code {
 }
 
 .container{
-  width: 87rem;
+  max-width: 87rem;
   margin: 0 auto;
 }
 

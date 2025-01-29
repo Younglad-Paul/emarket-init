@@ -16,7 +16,7 @@ const Assistance = () => {
             <p className="text-lg text-gray-700">
               Have any questions? Our support team is here to assist you. Reach out for personalized help with your registration or any platform-related inquiries.
             </p>
-            <button className="w-full py-3 px-6 bg-green-900 text-white font-semibold rounded-lg shadow-lg hover:bg-green-800 transition duration-200">
+            <button className="w-full py-3 px-6 bg-[#13802AFF] text-white font-semibold rounded-lg shadow-lg hover:bg-green-800 transition duration-200">
               Contact Support
             </button>
           </div>
@@ -27,7 +27,7 @@ const Assistance = () => {
             <p className="text-lg text-gray-700">
               We’ve prepared a simple and easy-to-follow guide to help you get started with registering your business. Get connected with a field agent in no time!
             </p>
-            <button className="w-full py-3 px-6 bg-green-900 text-white font-semibold rounded-lg shadow-lg hover:bg-green-800 transition duration-200">
+            <button className="w-full py-3 px-6 bg-[#13802AFF] text-white font-semibold rounded-lg shadow-lg hover:bg-green-800 transition duration-200">
               Start Registration Guide
             </button>
           </div>

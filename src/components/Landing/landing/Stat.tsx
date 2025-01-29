@@ -89,7 +89,7 @@ const Stat = () => {
     ];
 
     return (
-        <div className="w-full flex items-center justify-center p-10 py-10 bg-green-900 text-white">
+        <div className="w-full flex items-center justify-center p-10 py-10 bg-[#13802AFF] text-white">
             <div className="space-y-10 container p-4">
                 <section className="w-full grid grid-cols-2 gap-10 items-center">
                     <div className="space-y-4">
@@ -119,7 +119,7 @@ const Stat = () => {
                             pagination={{ clickable: true }}
                             autoplay={{ delay: 5000, disableOnInteraction: false }}
                             loop={true}
-                            className='border-2 border-dashed border-gray-400 rounded-md'
+                            className='rounded-md'
                         >
                             {Gallery.map((gallery, index) => (
                                 <SwiperSlide key={index} className='w-full h-96' style={{background: `url(${gallery.image}) no-repeat`, backgroundSize: 'cover'}} />
