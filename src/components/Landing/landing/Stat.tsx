@@ -91,13 +91,13 @@ const Stat = () => {
     return (
         <div className="w-full flex items-center justify-center p-10 py-10 bg-[#13802AFF] text-white">
             <div className="space-y-10 container p-4">
-                <section className="w-full grid grid-cols-2 gap-10 items-center">
+                <section className="w-full grid grid-cols-2 gap-24 items-center">
                     <div className="space-y-4">
-                        <h2 className="text-3xl font-bold">Connecting Marketplaces</h2>
-                        <p className="text-lg leading-relaxed">
+                        <h2 className="text-xl lg:text-3xl font-bold">Connecting Marketplaces</h2>
+                        <p className="leading-relaxed">
                             By bridging the gap between businesses and authorities, we ensure fair tax compliance and enable better resource allocation for the development of our communities.
                         </p>
-                        <div className="flex text-2xl">
+                        <div className="flex text-md lg:text-xl">
                             <p>
                                 <span className="text-green-500">
                                     <Counter stat={10452} duration={2000} />+
@@ -122,7 +122,7 @@ const Stat = () => {
                             className='rounded-md'
                         >
                             {Gallery.map((gallery, index) => (
-                                <SwiperSlide key={index} className='w-full h-96' style={{background: `url(${gallery.image}) no-repeat`, backgroundSize: 'cover'}} />
+                                <SwiperSlide key={index} className='w-full lg:h-96' style={{background: `url(${gallery.image}) no-repeat`, backgroundSize: 'cover'}} />
                                 
                             ))}
                         </Swiper>

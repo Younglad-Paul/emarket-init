@@ -1,25 +1,22 @@
 import agent from '../../../public/landing4.jpg'
 const Locate = () => {
     return (
-      <div className="w-full flex items-center justify-center p-10 bg-[#13802AFF] text-white ">
-        <div className="space-y-10 container p-4">
-          <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center ">
-            {/* Image Placeholder */}
+      <div className="w-full flex items-center justify-center py-16 bg-[#13802AFF]  text-white text-justify">
+      <div className="container p-4 space-y-10">
+          <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="flex justify-center">
-              <div className="w-full h-[30rem] bg-gray-300 text-gray-700 flex items-center justify-center text-lg  rounded-md">
-                <img src={agent} className='w-full h-full rounded-md'/>
-              </div>
-            </div>
-  
-            {/* Content Section */}
-            <div className="space-y-6 ">
-              <h2 className="text-3xl font-bold">Locate a Field Agent Near You</h2>
-              <p className="text-lg leading-relaxed">
+                        <div className="w-full bg-gray-300 rounded-md overflow-hidden">
+                            <img src={agent} alt="Agent" className="w-full h-full object-cover" />
+                        </div>
+                    </div>
+            <div className="space-y-6 text-justify ">
+              <h2 className="text-xl lg:text-3xl font-bold">Locate a Field Agent Near You</h2>
+              <p className="leading-relaxed">
                 Field agent stands are strategically placed across Enugu's markets, ensuring that all business owners have direct access to registration assistance. Our agents are committed to ensuring that your business is properly registered and verified in the system.
               </p>
   
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold">How It Works</h3>
+                <h3 className="text-md lg:text-xl font-semibold">How It Works</h3>
                 <ul className="space-y-3 list-disc pl-6">
                   <li>
                     <strong>Search Your Market:</strong> Use the search tool on our website to find your local field agent. Enter your market name or select from a list of available markets.

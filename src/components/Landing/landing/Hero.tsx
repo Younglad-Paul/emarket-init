@@ -72,11 +72,11 @@ export default function Hero() {
               backgroundSize: 'cover',
             }}
           >
-            <div className="w-full h-screen flex items-center bg-black bg-opacity-70">
-              <section className='container grid grid-cols-2'>
-              <div className=" flex flex-col items-center lg:items-start mb-20 space-y-6 lg:pr-40 ">
+            <div className="w-full h-screen flex text-center items-center bg-black bg-opacity-70">
+              <section className='container grid lg:grid-cols-2'>
+              <div className=" flex flex-col items-center lg:items-start mb-20 space-y-6 lg:pr-40 p-4 ">
                 <motion.h1
-                  className="text-lg lg:text-4xl font-bold uppercase text-[#13802AFF]"
+                  className="text-2xl lg:text-4xl font-bold uppercase text-[#13802AFF]"
                   initial="hidden"
                   whileInView="visible"
                   variants={textVariants}

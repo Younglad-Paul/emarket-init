@@ -47,6 +47,14 @@ const News = () => {
             slug: 'oil-prices-skyrocket',
             newsContent: 'Energy stocks soared today as oil prices hit their highest levels of the year, fueled by production cuts from major oil-producing nations. This surge comes amid heightened geopolitical tensions and growing demand for energy resources. Industry experts believe that continued price increases could lead to higher costs for consumers and businesses alike, potentially reshaping the energy landscape.',
         },
+        {
+            id: '7f8g9h0i1j2',
+            type: 'general',
+            image: stat2,
+            title: 'Fed’s Rate Cut Hint: Investors Hold Their Breath',
+            slug: 'feds-rate-cut-hint',
+            newsContent: 'The Federal Reserve signaled potential interest rate cuts, leaving investors on edge as they await further clarity. While some analysts view this as a much-needed stimulus to counter slowing economic growth, others worry about long-term inflationary risks. Market analysts suggest that the Fed’s next move could significantly impact borrowing costs and consumer spending trends across the nation.',
+        },
     ];
 
 
@@ -58,7 +66,7 @@ const News = () => {
             <div className="container">
                 <section className="">
                     <div className="space-y-4">
-                        <h2 className="text-4xl font-extrabold text-green-900 text-center">Recent News</h2>
+                        <h2 className="text-xl lg:text-3xl font-extrabold text-green-900 text-center">Recent News</h2>
                         <div className='flex items-center justify-center'>
                             <div className='w-42 bg-gray-200 flex gap-2 justify-between rounded-full p-1 text-gray-700'>
                                 {Modal.map((modal, index) => (

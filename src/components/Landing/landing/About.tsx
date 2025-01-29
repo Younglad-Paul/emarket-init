@@ -6,16 +6,16 @@ export default function About() {
             <div className="container p-4 space-y-10">
                 <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                     <div className="space-y-6">
-                        <h2 className="text-3xl font-bold">About Enugu North eMarket</h2>
-                        <p className="text-lg leading-relaxed">
+                        <h2 className="text-xl lg:text-3xl font-bold">About Enugu North eMarket</h2>
+                        <p className="leading-relaxed">
                             Enugu eMarket is a dedicated platform designed to empower marketers in Enugu by providing seamless registration, valuable insights, and a community-driven network. Our mission is to foster innovation, collaboration, and data-driven decision-making within the marketing industry.
                         </p>
-                        <p className="text-lg leading-relaxed">
+                        <p className="leading-relaxed">
                             Enugu eMarket is dedicated to supporting the local economy by providing a comprehensive and reliable census database for marketers. This empowers informed decision-making and strategic planning for business growth and development. Our platform ensures that every marketer, regardless of experience, has the tools and resources needed to thrive.
                         </p>
                     </div>
                     <div className="flex justify-center">
-                        <div className="w-full h-[30rem] bg-gray-300 rounded-md overflow-hidden">
+                        <div className="w-full bg-gray-300 rounded-md overflow-hidden">
                             <img src={agent} alt="Agent" className="w-full h-full object-cover" />
                         </div>
                     </div>

@@ -46,11 +46,11 @@ const FAQ = () => {
     return (
         <div className="w-full flex justify-center px-4 ">
             <div className='space-y-10 container'>
-            <h2 className="text-4xl font-extrabold text-green-900 text-center">FAQ</h2>
+            <h2 className="text-xl lg:text-3xl font-extrabold text-green-900 text-center">FAQ</h2>
                 <section className='w-full pt-10'>
                     {Questions.map((question, index) => (
                         <section key={index} className='z-10'>
-                            <div className='border-b p-2 mt-2 flex items-center justify-between lg:text-lg cursor-pointer' onClick={() => toggleModal(index)} >{question.question} {modal === index ? <ChevronLeft /> : <ChevronDown />}</div>
+                            <div className='border-b p-2 mt-2 flex items-center justify-between cursor-pointer' onClick={() => toggleModal(index)} >{question.question} {modal === index ? <ChevronLeft /> : <ChevronDown />}</div>
                             <motion.div className='bg-green-300 bg-opacity-20 backdrop-blur-md text-justify'
                                 initial={{ overflowY: 'hidden', height: 0 }}
                                 animate={modal === index? { height: 'auto' } : { overflowY: 'hidden', height: 0 }}
