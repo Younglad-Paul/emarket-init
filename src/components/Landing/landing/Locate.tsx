@@ -3,7 +3,7 @@ const Locate = () => {
     return (
       <div className="w-full flex items-center justify-center py-8 lg:py-16 bg-[#13802AFF]  text-white text-justify">
       <div className="container p-4 space-y-10">
-          <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 items-center">
             <div className="flex justify-center">
                         <div className="w-full bg-gray-300 rounded-md overflow-hidden">
                             <img src={agent} alt="Agent" className="w-full h-full object-cover" />
