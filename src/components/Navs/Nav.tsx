@@ -21,10 +21,10 @@ export default function Nav() {
   return (
     <div className='h-[70px]'>
       <div
-        className={`bg-[#13802AFF] w-full text-white p-2 z-10 transition-all ${scrolling ? 'fixed' : 'relative'
+        className={`bg-[#13802AFF] w-full text-white  z-10 transition-all ${scrolling ? 'fixed' : 'relative'
           }`}
       >
-        <div className="container flex items-center justify-between">
+        <div className="container p-2 flex items-center justify-between">
           <img src={logo} alt="Logo" className="w-16" />
           <div className="hidden lg:flex items-center gap-10 p-2 px-6 rounded-md">
             <a href="/" className="hover:text-yellow-500 flex items-center gap-2">
@@ -48,9 +48,6 @@ export default function Nav() {
             </a>
           </div>
             <Menu className='flex lg:hidden' />
-          {/* <section className='h-[100vh] bg-[#13802AFF] absolute w-6/12'>
-            d
-          </section> */}
         </div>
       </div>
     </div>

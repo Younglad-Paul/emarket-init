@@ -53,7 +53,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="w-full h-screen lg:h-[80vh] text-white">
+    <section className="w-full h-screen md:h-[80vh] text-white">
       <Swiper
         modules={[Pagination, A11y, Autoplay ]}
         spaceBetween={0}
@@ -66,7 +66,7 @@ export default function Hero() {
         {slides.map((slide, index) => (
           <SwiperSlide
             key={index}
-            className="w-full h-screen lg:h-[80vh]"
+            className="w-full h-screen md:h-[80vh]"
             style={{
               background: `url(${slide.img}) no-repeat center`,
               backgroundSize: 'cover',
@@ -76,7 +76,7 @@ export default function Hero() {
               <section className='container grid lg:grid-cols-2'>
               <div className=" flex flex-col items-center lg:items-start mb-20 space-y-6 lg:pr-36 p-4 ">
                 <motion.h1
-                  className="text-2xl lg:text-4xl font-bold uppercase text-[#13802AFF]"
+                  className="text-2xl lg:text-4xl font-bold"
                   initial="hidden"
                   whileInView="visible"
                   variants={textVariants}

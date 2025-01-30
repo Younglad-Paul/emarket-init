@@ -91,7 +91,7 @@ const Stat = () => {
     return (
         <div className="w-full flex items-center justify-center lg:p-10 py-10 bg-[#13802AFF] text-white">
             <div className="space-y-10 container p-4">
-                <section className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-24 items-center">
+                <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-24 items-center">
                     <div className="space-y-4">
                         <h2 className="text-xl lg:text-3xl font-bold">Connecting Marketplaces</h2>
                         <p className="leading-relaxed">
