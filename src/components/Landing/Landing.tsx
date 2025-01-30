@@ -6,6 +6,7 @@ import Stat from './landing/Stat'
 import Locate from './landing/Locate'
 import Assistance from './landing/Assistance'
 import News from './landing/News'
+import Signup from './landing/SignUp'
 
 const Landing = () => {
   return (
@@ -13,13 +14,14 @@ const Landing = () => {
         <Hero />
         <Action />
         <About />
-      <Locate />
       <div className='p-10 container grid grid-cols-1 lg:grid-cols-2 gap-10'>
       <FAQ />
       <News />
       </div>
-      <Stat />
+      <Locate />
       <Assistance />
+      <Stat />
+      <Signup />
     </div>
   )
 }
