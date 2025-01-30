@@ -1,3 +1,54 @@
+/* @font-face{
+  font-family: "Satoshi";
+  src:local("Satoshi-Black"),
+  url('./assets/fonts/Satoshi-Black.ttf') 
+}
+@font-face{
+  font-family: "Satoshi";
+  src:local("Satoshi-BlackItalic"),
+  url('./assets/fonts/Satoshi-BlackItalic.ttf') 
+}
+@font-face{
+  font-family: "Satoshi";
+  src:local("Satoshi-Bold"),
+  url('./assets/fonts/Satoshi-Bold.ttf') 
+}
+@font-face{
+  font-family: "Satoshi";
+  src:local("Satoshi-BoldItalic"),
+  url('./assets/fonts/Satoshi-BoldItalic.ttf') 
+}
+@font-face{
+  font-family: "Satoshi";
+  src:local("Satoshi-Italic"),
+  url('./assets/fonts/Satoshi-Italic.ttf') 
+}
+@font-face{
+  font-family: "Satoshi";
+  src:local("Satoshi-Light"),
+  url('./assets/fonts/Satoshi-Light.ttf') 
+}
+@font-face{
+  font-family: "Satoshi";
+  src:local("Satoshi-LightItalic"),
+  url('./assets/fonts/Satoshi-LightItalic.ttf') 
+}
+@font-face{
+  font-family: "Satoshi";
+  src:local("Satoshi-Medium"),
+  url('./assets/fonts/Satoshi-Medium.ttf') 
+}
+@font-face{
+  font-family: "Satoshi";
+  src:local("Satoshi-MediumItalic"),
+  url('./assets/fonts/Satoshi-MediumItalic.ttf') 
+}
+@font-face{
+  font-family: "Satoshi";
+  src:local("Satoshi-Regular"),
+  url('./assets/fonts/Satoshi-Regular.ttf') 
+} */
+
 .App {
   text-align: center;
 }

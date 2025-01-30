@@ -39,22 +39,7 @@ const News = () => {
             slug: 'us-china-trade-deal',
             newsContent: 'A landmark trade agreement between the United States and China has brought optimism to global markets. The deal, which focuses on reducing tariffs and improving intellectual property protections, has been hailed as a step towards stabilizing international trade relations. Economists believe this could pave the way for sustained economic growth, especially in emerging markets that rely heavily on exports.',
         },
-        {
-            id: '9p0q1r2s3t4',
-            type: 'general',
-            image: stat1,
-            title: 'Oil Prices Skyrocket: Energy Stocks on Fire',
-            slug: 'oil-prices-skyrocket',
-            newsContent: 'Energy stocks soared today as oil prices hit their highest levels of the year, fueled by production cuts from major oil-producing nations. This surge comes amid heightened geopolitical tensions and growing demand for energy resources. Industry experts believe that continued price increases could lead to higher costs for consumers and businesses alike, potentially reshaping the energy landscape.',
-        },
-        {
-            id: '7f8g9h0i1j2',
-            type: 'general',
-            image: stat2,
-            title: 'Fed’s Rate Cut Hint: Investors Hold Their Breath',
-            slug: 'feds-rate-cut-hint',
-            newsContent: 'The Federal Reserve signaled potential interest rate cuts, leaving investors on edge as they await further clarity. While some analysts view this as a much-needed stimulus to counter slowing economic growth, others worry about long-term inflationary risks. Market analysts suggest that the Fed’s next move could significantly impact borrowing costs and consumer spending trends across the nation.',
-        },
+        
     ];
 
 
