@@ -1,10 +1,10 @@
-import agent from '../../../public/landing4.jpg'; 
+import agent from '../../../public/landing4.jpg';
 
 export default function About() {
     return (
-        <div className="w-full flex items-center justify-center py-16 bg-[#13802AFF]  text-white text-justify">
+        <div className="w-full flex items-center justify-center lg:py-16 bg-gradient-to-b from-[#2C9A44] to-[#13802A] text-white text-justify">
             <div className="container p-4 space-y-10">
-                <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:gap-10 items-center">
                     <div className="space-y-6">
                         <h2 className="text-xl lg:text-3xl font-bold">About Enugu North eMarket</h2>
                         <p className="leading-relaxed">

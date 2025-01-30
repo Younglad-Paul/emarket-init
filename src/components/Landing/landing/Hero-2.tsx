@@ -69,7 +69,7 @@ const Hero = () => {
             style={{ backgroundImage: `url(${slide.img})` }}
             key={index}
           >
-            <div className="content bg-green-900 p-6  bg-opacity-80">
+            <div className="content bg-[#13802A] p-6  bg-opacity-80">
               <div className="name">{slide.title}</div>
               <div className="des">
                 {slide.content}

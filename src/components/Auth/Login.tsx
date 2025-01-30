@@ -30,7 +30,7 @@ const navigate = useNavigate()
                   <label htmlFor='email' >Password:</label>
                   <input type='password' className='w-full border-2 p-2 border-green-900 rounded-lg focus:outline-none' />
                 </div>
-                <button onClick={handleSubmit} className='w-full p-2 text-center font-semibold my-4 bg-green-900 hover:bg-green-800 text-white rounded-lg'>Password</button>
+                <button onClick={handleSubmit} className='w-full p-2 text-center font-semibold my-4 bg-[#13802A] hover:bg-green-800 text-white rounded-lg'>Password</button>
               </section>
             </div>
           </section>

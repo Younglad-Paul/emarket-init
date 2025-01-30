@@ -26,12 +26,12 @@ const DashbardLayout = () => {
 
     return (
         <section className="text-start w-full h-screen flex fixed bg-gray-50">
-          <div className="hidden lg:flex bg-green-900 text-white w-2/12">
+          <div className="hidden lg:flex bg-[#13802A] text-white w-2/12">
             <Nav />
           </div>
     
           <main className="flex-grow">
-            <div className="bg-green-900 text-white h-20">
+            <div className="text-black border-b h-20">
               {/* <MobileNav isNav={isActive} setIsNav={setIsActive}  /> */}
               <Header isNav={isActive} setIsNav={setIsActive} />
             </div>

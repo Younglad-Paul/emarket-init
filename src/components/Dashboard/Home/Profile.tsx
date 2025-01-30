@@ -9,7 +9,7 @@ const Profile = () => {
                 <div>
                 <div className="w-full py-4 border-b flex items-center justify-between">
                     <h1 className="text-xl lg:text-3xl">Field Agent&apos;s Information</h1>
-                    <Link to='/dashboard/edit-profile'  className="bg-green-900 hover:bg-green-800 text-white p-2 rounded-md cursor-pointer">Edit Profile</Link>
+                    <Link to='/dashboard/edit-profile'  className="bg-[#13802A] hover:bg-green-800 text-white p-2 rounded-md cursor-pointer">Edit Profile</Link>
                 </div>
                 </div>
                 <div className="w-full p-4 border-b space-y-2">

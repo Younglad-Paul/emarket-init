@@ -11,10 +11,8 @@ const Landing = () => {
   return (
     <div className='bg-gray-50 text-sm lg:text-md'>
         <Hero />
-      {/* <div className='p-10 container grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'> */}
         <Action />
         <About />
-      {/* </div> */}
       <Locate />
       <div className='p-10 container grid grid-cols-1 lg:grid-cols-2 gap-10'>
       <FAQ />

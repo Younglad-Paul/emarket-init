@@ -158,14 +158,14 @@ const Store = () => {
       <section className="w-full space-y-4">
         <div className="w-full flex items-center justify-between">
           <h1 className="text-xl lg:text-3xl">Registered Stores</h1>
-          <Link to="/form" className="bg-green-900 hover:bg-green-800 p-2 text-white flex items-center justify-center rounded-md">
+          <Link to="/form" className="bg-[#13802A] hover:bg-green-800 p-2 text-white flex items-center justify-center rounded-md">
             <Plus />
             Register Owner
           </Link>
         </div>
         <Table className="w-full lg:table-auto overflow-hidden mt-5 rounded-md shadow-md">
           <TableHeader>
-            <TableRow className="bg-green-900 text-white text-center">
+            <TableRow className="bg-[#13802A] text-white text-center">
               <TableHead className="py-4 lg:px-4 text-sm font-medium">ID</TableHead>
               <TableHead className="py-2 lg:px-4 text-sm font-medium">Store</TableHead>
               <TableHead className="py-2 lg:px-4 text-sm font-medium">Address</TableHead>
@@ -183,7 +183,7 @@ const Store = () => {
                 <TableCell className="lg:px-4 py-2 text-sm">{user.name}</TableCell>
                 <TableCell className="lg:px-4 py-2 text-sm">{user.date}</TableCell>
                 <TableCell className="lg:px-4 py-2 flex">
-                  <button className="text-white bg-green-900 hover:bg-green-800 p-2 lg:px-4 rounded-lg flex items-center justify-center gap-2 h-10 text-sm">
+                  <button className="text-white bg-[#13802A] hover:bg-green-800 p-2 lg:px-4 rounded-lg flex items-center justify-center gap-2 h-10 text-sm">
                     <Info size={15} /> More
                   </button>
                 </TableCell>
@@ -196,7 +196,7 @@ const Store = () => {
           <p className="flex items-center hover:text-green-500 cursor-pointer text-sm">
             <ChevronLeft /> Prev
           </p>
-          <p className="bg-green-900 p-2 text-white rounded-md text-sm">8</p>
+          <p className="bg-[#13802A] p-2 text-white rounded-md text-sm">8</p>
           <p className="flex items-center hover:text-green-500 cursor-pointer text-sm">
             Next <ChevronRight />
           </p>

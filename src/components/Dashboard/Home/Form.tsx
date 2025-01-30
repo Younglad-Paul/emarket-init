@@ -304,7 +304,7 @@ const Form = () => {
 
             </section>
             <div className="w-full flex justify-end my-10">
-                <button className="bg-green-900 hover:bg-green-800 p-2 rounded-md text-white flex items-center justify-center gap-2">
+                <button className="bg-[#13802A] hover:bg-green-800 p-2 rounded-md text-white flex items-center justify-center gap-2">
                     <Check />Register
                 </button>
             </div>

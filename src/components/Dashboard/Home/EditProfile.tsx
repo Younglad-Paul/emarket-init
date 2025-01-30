@@ -8,7 +8,7 @@ export default function EditProfile() {
             <section className="w-full">
             <div className="w-full py-4 border-b flex items-center justify-between">
                     <h1 className="text-3xl">Field Agent&apos;s Information</h1>
-                    <Link to='/dashboard/profile'  className="bg-green-900 hover:bg-green-800 text-white p-2 rounded-md cursor-pointer flex gap-2"><Check /> Save</Link>
+                    <Link to='/dashboard/profile'  className="bg-[#13802A] hover:bg-green-800 text-white p-2 rounded-md cursor-pointer flex gap-2"><Check /> Save</Link>
                 </div>
                 <div className="w-full p-4 border-b space-y-2">
                     <h2 className="text-xl italic">Personal Information</h2>

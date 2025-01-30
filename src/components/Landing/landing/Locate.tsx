@@ -1,7 +1,7 @@
 import agent from '../../../public/landing4.jpg'
 const Locate = () => {
     return (
-      <div className="w-full flex items-center justify-center py-16 bg-[#13802AFF]  text-white text-justify">
+      <div className="w-full flex items-center justify-center py-8 lg:py-16 bg-[#13802AFF]  text-white text-justify">
       <div className="container p-4 space-y-10">
           <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="flex justify-center">
@@ -9,7 +9,7 @@ const Locate = () => {
                             <img src={agent} alt="Agent" className="w-full h-full object-cover" />
                         </div>
                     </div>
-            <div className="space-y-6 text-justify ">
+            <div className="space-y-6 text-justify order-first lg:order-last">
               <h2 className="text-xl lg:text-3xl font-bold">Locate a Field Agent Near You</h2>
               <p className="leading-relaxed">
                 Field agent stands are strategically placed across Enugu's markets, ensuring that all business owners have direct access to registration assistance. Our agents are committed to ensuring that your business is properly registered and verified in the system.
