@@ -71,7 +71,7 @@ const Market =()=> {
 
   return (
     <div className="w-full h-screen overflow-y-scroll p-4 pb-20">
-      <section className="grid lg:grid-cols-4 rounded-lg gap-4">
+      <section className="grid md:grid-cols-2 lg:grid-cols-4 rounded-lg gap-4">
         {Cards.map((card, index) => (
           <motion.div
             key={index}

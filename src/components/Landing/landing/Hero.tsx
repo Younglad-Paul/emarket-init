@@ -72,7 +72,7 @@ export default function Hero() {
               backgroundSize: 'cover',
             }}
           >
-            <div className="w-full h-screen flex text-center lg:text-start items-center bg-black bg-opacity-70">
+            <div className="w-full h-screen flex pt-28 lg:pt-0 text-center lg:text-start items-center bg-black bg-opacity-70">
               <section className='container grid lg:grid-cols-2'>
               <div className=" flex flex-col items-center lg:items-start mb-20 space-y-6 lg:pr-36 p-4 ">
                 <motion.h1

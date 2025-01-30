@@ -12,6 +12,7 @@ import { useState } from 'react';
 import Store from './Home/Store';
 import Profile from './Home/Profile';
 import EditProfile from './Home/EditProfile';
+import MobileNav from './Utility/MobileNav';
 
 // const isAuthenticated = () => {
 //   return localStorage.getItem('authToken') !== null;
@@ -31,8 +32,8 @@ const DashbardLayout = () => {
           </div>
     
           <main className="flex-grow">
-            <div className="text-black border-b h-20">
-              {/* <MobileNav isNav={isActive} setIsNav={setIsActive}  /> */}
+            <div className="bg-[#13802A] text-white border-b h-20">
+              <MobileNav isNav={isActive} setIsNav={setIsActive}  />
               <Header isNav={isActive} setIsNav={setIsActive} />
             </div>
     

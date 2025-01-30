@@ -59,8 +59,8 @@ const Form = () => {
                 <div className="w-full p-4 border-b">
                     <h2 className="text-xl italic">Personal Information</h2>
                     <div>
-                        <section className="lg:flex gap-4">
-                            <div className="lg:w-4/12 py-2 grid">
+                        <section className="md:flex gap-4">
+                            <div className="md::w-4/12 py-2 grid">
                                 <label htmlFor="name"> Title:</label>
                                 <select className="w-full border border-black p-2 rounded-md">
                                     <option value={'mr.'}>Mr.</option>
@@ -85,8 +85,8 @@ const Form = () => {
                                 <input type="text" className="w-full border border-black p-2 rounded-md" />
                             </div>
                         </section>
-                        <section className="lg:flex gap-4">
-                            <div className="lg:w-4/12 py-2 grid">
+                        <section className="md:flex gap-4">
+                            <div className="md:w-4/12 py-2 grid">
                                 <label htmlFor="name"> Gender <span className="text-red-800">*</span>:</label>
                                 <select className="w-full border border-black p-2 rounded-md">
                                     <option value={'mr.'}>Male</option>
@@ -102,7 +102,7 @@ const Form = () => {
                                 <input type="text" className="w-full border border-black p-2 rounded-md" />
                             </div>
                         </section>
-                        <section className="lg:flex gap-4">
+                        <section className="lmd:flex gap-4">
                             <div className="w-full py-2 grid">
                                 <label htmlFor="name">Address:</label>
                                 <input type="text" className="w-full border border-black p-2 rounded-md" />
@@ -117,8 +117,8 @@ const Form = () => {
                             </div>
                         </section>
 
-                        <section className="lg:flex gap-4">
-                            <div className="lg:w-4/12 py-2 grid">
+                        <section className="md:flex gap-4">
+                            <div className="md:w-4/12 py-2 grid">
                                 <label htmlFor="name"> Means of Identification:</label>
                                 <select className="w-full border border-black p-2 rounded-md">
                                     <option value={'mr.'}>National Identification Number</option>
@@ -141,7 +141,7 @@ const Form = () => {
                         <div key={business.id} className="w-full p-4 border-b">
                             <h2 className="text-xl italic">Business Information {index + 1}</h2>
                             <div>
-                                <div className="lg:w-6/12 py-2 lg:pr-4 grid">
+                                <div className="md:w-6/12 py-2 lg:pr-4 grid">
                                     <label>
                                         Business Name <span className="text-red-800">*</span>:
                                     </label>
@@ -178,7 +178,7 @@ const Form = () => {
                                         />
                                     </div>
                                 </section>
-                                <section className="lg:flex gap-4">
+                                <section className="md:flex gap-4">
                                     <div className="w-full py-2 grid">
                                         <label>Hot Line 1</label>
                                         <input
@@ -213,7 +213,7 @@ const Form = () => {
                                         className="w-full border border-black p-2 rounded-md"
                                     />
                                 </section>
-                                <section className="lg:flex gap-4">
+                                <section className="md:flex gap-4">
                                     <div className="w-full py-2 grid">
                                         <label>Town:</label>
                                         <input
@@ -253,7 +253,7 @@ const Form = () => {
                 <div className="w-full p-4">
                     <h2 className="text-xl italic">Next of Kin Information</h2>
                     <div>
-                        <section className="lg:flex gap-4">
+                        <section className="md:flex gap-4">
                             <div className="w-full py-2 grid">
                                 <label htmlFor="name"> Name Of Next Kin:</label>
                                 <input type="text" className="w-full border border-black p-2 rounded-md" />
@@ -263,7 +263,7 @@ const Form = () => {
                                 <input type="text" className="w-full border border-black p-2 rounded-md" />
                             </div>
                         </section>
-                        <section className="lg:flex gap-4">
+                        <section className="md:flex gap-4">
                             <div className="w-full py-2 grid">
                                 <label htmlFor="name">Phone Number:</label>
                                 <input type="text" className="w-full border border-black p-2 rounded-md" />
@@ -273,7 +273,7 @@ const Form = () => {
                                 <input type="text" className="w-full border border-black p-2 rounded-md" />
                             </div>
                         </section>
-                        <section className="lg:flex gap-4">
+                        <section className="md:flex gap-4">
                             <div className="w-full py-2 grid">
                                 <label htmlFor="name">Address:</label>
                                 <input type="text" className="w-full border border-black p-2 rounded-md" />
@@ -284,7 +284,7 @@ const Form = () => {
                             </div>
 
                         </section>
-                        <section className="lg:flex gap-4">
+                        <section className="md:flex gap-4">
                             <div className="w-full py-2 grid">
                                 <label htmlFor="name"> L.G.A:</label>
                                 <input type="text" className="w-full border border-black p-2 rounded-md" />

@@ -1,4 +1,5 @@
 import { Menu, User } from "lucide-react";
+import Logo from '../../../public/logo.png'
 
 interface HeaderProps {
   isNav: boolean;
@@ -9,7 +10,7 @@ const Header = ({ isNav, setIsNav }: HeaderProps) => {
   return (
     <div className="w-full h-full flex items-center justify-between lg:justify-end px-4 lg:px-10 gap-2">
       <div className="flex lg:hidden">
-        <img src="/logo.png" className="w-16" alt="Logo" />
+        <img src={Logo} className="w-16" alt="Logo" />
       </div>
       <div className="flex items-center gap-2">
         <div className="border rounded-full">
