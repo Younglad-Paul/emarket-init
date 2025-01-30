@@ -47,7 +47,7 @@ const FAQ = () => {
         <div className="w-full flex justify-center px-4 ">
             <div className='space-y-10 container'>
             <h2 className="text-xl lg:text-3xl font-extrabold text-green-900 text-center">FAQ</h2>
-                <section className='w-full pt-10'>
+                <section className='w-full my-4 md:pt-10'>
                     {Questions.map((question, index) => (
                         <section key={index} className='z-10'>
                             <div className='border-b p-2 mt-2 flex items-center justify-between cursor-pointer' onClick={() => toggleModal(index)} >{question.question} {modal === index ? <ChevronLeft /> : <ChevronDown />}</div>
