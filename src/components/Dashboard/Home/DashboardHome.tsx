@@ -139,7 +139,7 @@ const DashboardHome = () => {
                 <TableCell className="lg:px-4 py-2 text-sm">{user.date}</TableCell>
                 <TableCell className="lg:px-4 py-2 flex">
                   <button className="text-white bg-[#13802A] hover:bg-green-800 p-2 lg:px-4 rounded-lg flex items-center justify-center gap-2 h-10 text-sm">
-                    <Info size={15} /> More
+                    <Info size={15} /> <p className="hidden lg:block"> More</p>
                   </button>
                 </TableCell>
               </TableRow>

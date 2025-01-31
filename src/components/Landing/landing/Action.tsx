@@ -1,28 +1,30 @@
 import { motion } from "framer-motion";
-import Verify from '../../../public/cert.svg';
-import Seach from '../../../public/search.svg';
-import Reg from '../../../public/certify.svg';
-import Tax from '../../../public/register.svg';
+import { 
+    Buildings, 
+    MagnifyingGlass, 
+    Certificate, 
+    Receipt 
+} from "@phosphor-icons/react";
 
 export default function Action() {
     const Cards = [
         {
-            image: <img src={Reg} className="w-40" alt="Register" />,
+            image: <Buildings size={64} weight="duotone" className="text-green-600" />,
             text: "Register your Business",
             direction: { x: -100, y: 0 },
         },
         {
-            image: <img src={Seach} className="w-40" alt="Register" />,
+            image: <MagnifyingGlass size={64} weight="duotone" className="text-green-600" />,
             text: "Search up Business",
             direction: { x: 100, y: 0 },
         },
         {
-            image: <img src={Verify} className="w-40" alt="Register" />,
+            image: <Certificate size={64} weight="duotone" className="text-green-600" />,
             text: "Business Verification",
             direction: { x: 0, y: -100 },
         },
         {
-            image: <img src={Tax} className="w-40" alt="Tax Services" />,
+            image: <Receipt size={64} weight="duotone" className="text-green-600" />,
             text: "Tax Services",
             direction: { x: 0, y: 100 },
         },
@@ -55,7 +57,7 @@ export default function Action() {
                                 {card.image}
                             </div>
                         </div>
-                        <p className="hidden text-sm font-medium text-gray-400">{card.text}</p>
+                        <p className="hidden lg:block text-sm font-medium text-gray-400">{card.text}</p>
                     </motion.div>
                 ))}
             </div>
