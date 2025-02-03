@@ -5,11 +5,11 @@ import { motion } from "motion/react";
 import PropTypes from "prop-types";
 import Logo from '../../../public/logo.png'
 
-const MobileNav = ({ isNav, setIsNav }) => {
+const MobileNav = ({ isNav, setIsNav }: { isNav: boolean; setIsNav: (value: boolean) => void }) => {
   const location = useLocation(); 
 
   return (
-    <motion.section onClick={() => setIsNav(false)} className="fixed h-full lg:hidden w-full bg-black flex  justify-between bg-opacity-20 z-20"
+    <motion.section onClick={() => setIsNav(false)} className="fixed h-full lg:hidden w-full bg-black flex justify-between bg-opacity-20 z-20"
       initial={{x: -2000}}
       animate={isNav ? {x: 0}: {x: -2000}}
       transition={{duration: .5}}
