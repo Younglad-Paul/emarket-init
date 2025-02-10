@@ -8,6 +8,7 @@ import DashbardLayout from './components/Dashboard/DashboardLayout'
 import AboutUs from "./components/About/About";
 import ContactUs from "./components/Contact/Contact";
 import FAQ from "./components/FAQ/FAQ";
+import NewsPage from "./components/News/News";
 
 const App = () => {
   return (
@@ -39,6 +40,13 @@ const App = () => {
           </>
           } 
           />
+           <Route path="/news" element={
+            <>
+            <Nav />
+            <NewsPage />
+            <Footer />
+            </>
+            } />
           <Route path="/contact" element={
           <>
           <Nav />

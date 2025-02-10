@@ -1,71 +1,40 @@
-import { ChevronDown, ChevronLeft } from 'lucide-react'
-import { motion } from 'motion/react'
-import { useState } from 'react'
-const FAQ = () => {
-    const [modal, setModal] = useState(null)
+import Image from "../../public/landing1.jpg"
 
-    const Questions = [
-        {
-            question: "What is Enugu eMarket?",
-            answer: "Microsoft and our third-party vendors use cookies to store and access information such as unique IDs to deliver, maintain and improve our services and ads. If you agree, MSN and Microsoft Bing will personalise the content and ads that you see. You can select ‘I Accept’ to consent to these uses or click on ‘Manage preferences’ to review your options and exercise your right to object to Legitimate Interest where used.  You can change your selection under ‘Manage Preferences’ at the bottom of this pag",
-        },
-        {
-          question: "How can i become a Field Agent?",
-          answer: "Microsoft and our third-party vendors use cookies to store and access information such as unique IDs to deliver, maintain and improve our services and ads. If you agree, MSN and Microsoft Bing will personalise the content and ads that you see. You can select ‘I Accept’ to consent to these uses or click on ‘Manage preferences’ to review your options and exercise your right to object to Legitimate Interest where used.  You can change your selection under ‘Manage Preferences’ at the bottom of this pag",
-      },
-        {
-            question: "How does Enugu eMarket work?",
-            answer: "Microsoft and our third-party vendors use cookies to store and access information such as unique IDs to deliver, maintain and improve our services and ads. If you agree, MSN and Microsoft Bing will personalise the content and ads that you see. You can select ‘I Accept’ to consent to these uses or click on ‘Manage preferences’ to review your options and exercise your right to object to Legitimate Interest where used.  You can change your selection under ‘Manage Preferences’ at the bottom of this pag",
-        },
-        {
-            question: "Who can use Enugu eMarket?",
-            answer: "Anyone residing in Enugu State can use the app. Microsoft and our third-party vendors use cookies to store and access information such as unique IDs to deliver, maintain and improve our services and ads. If you agree, MSN and Microsoft Bing will personalise the content and ads that you see. You can select ‘I Accept’ to consent to these uses or click on ‘Manage preferences’ to review your options and exercise your right to object to Legitimate Interest where used.  You can change your selection under ‘Manage Preferences’ at the bottom of this pag",
-        },
-        {
-            question: "Can I Register?",
-            answer: "Microsoft and our third-party vendors use cookies to store and access information such as unique IDs to deliver, maintain and improve our services and ads. If you agree, MSN and Microsoft Bing will personalise the content and ads that you see. You can select ‘I Accept’ to consent to these uses or click on ‘Manage preferences’ to review your options and exercise your right to object to Legitimate Interest where used.  You can change your selection under ‘Manage Preferences’ at the bottom of this pag",
-        },
-        {
-            question: "How secure is my data?",
-            answer: "Health Verify ensures your data is securely encrypted and protected. Microsoft and our third-party vendors use cookies to store and access information such as unique IDs to deliver, maintain and improve our services and ads. If you agree, MSN and Microsoft Bing will personalise the content and ads that you see. You can select ‘I Accept’ to consent to these uses or click on ‘Manage preferences’ to review your options and exercise your right to object to Legitimate Interest where used.  You can change your selection under ‘Manage Preferences’ at the bottom of this pag",
-        },
-        {
-            question: "How secure is my data?",
-            answer: "Health Verify ensures your data is securely encrypted and protected. Microsoft and our third-party vendors use cookies to store and access information such as unique IDs to deliver, maintain and improve our services and ads. If you agree, MSN and Microsoft Bing will personalise the content and ads that you see. You can select ‘I Accept’ to consent to these uses or click on ‘Manage preferences’ to review your options and exercise your right to object to Legitimate Interest where used.  You can change your selection under ‘Manage Preferences’ at the bottom of this pag",
-        },
-        {
-            question: "How secure is my data?",
-            answer: "Health Verify ensures your data is securely encrypted and protected. Microsoft and our third-party vendors use cookies to store and access information such as unique IDs to deliver, maintain and improve our services and ads. If you agree, MSN and Microsoft Bing will personalise the content and ads that you see. You can select ‘I Accept’ to consent to these uses or click on ‘Manage preferences’ to review your options and exercise your right to object to Legitimate Interest where used.  You can change your selection under ‘Manage Preferences’ at the bottom of this pag",
-        },
-    ];
+export default function FAQ() {
+  const questions = [
+    {
+      question: "What is Enugu eMarket?",
+      answer: "Enugu eMarket is a dedicated platform designed to empower marketers in Enugu by providing seamless registration, valuable insights, and a community-driven network."
+    },
+    {
+      question: "How can I become a Field Agent?",
+      answer: "To become a Field Agent, simply register on our platform and follow the provided guidelines to verify your account."
+    },
+    {
+      question: "Who can use Enugu eMarket?",
+      answer: "Anyone residing in Enugu State, including marketers, business owners, and consumers looking to connect with trusted vendors."
+    },
+    {
+      question: "Can I register?",
+      answer: "Yes! Registration is open to all marketers and businesses in Enugu who wish to benefit from our platform."
+    },
+    {
+      question: "How secure is my data?",
+      answer: "We prioritize data security and use industry-standard encryption methods to ensure your personal and business data is protected."
+    }
+  ];
 
-    const toggleModal = (index: any) => {
-        setModal((prevIndex) => (prevIndex === index ? null : index));
-    };
-
-    return (
-        <div className="w-full flex justify-center px-4 ">
-            <div className='space-y-10 container'>
-            <h2 className="text-xl lg:text-3xl font-extrabold text-green-900 text-center">FAQ</h2>
-                <section className='w-full my-4 md:pt-10'>
-                    {Questions.map((question, index) => (
-                        <section key={index} className='z-10'>
-                            <div className='border-b p-2 mt-2 flex items-center justify-between cursor-pointer' onClick={() => toggleModal(index)} >{question.question} {modal === index ? <ChevronLeft /> : <ChevronDown />}</div>
-                            <motion.div className='bg-green-300 bg-opacity-20 backdrop-blur-md text-justify'
-                                initial={{ overflowY: 'hidden', height: 0 }}
-                                animate={modal === index? { height: 'auto' } : { overflowY: 'hidden', height: 0 }}
-                                transition={{duration: 0.5, type: 'tween' }}
-                            >
-                                <div className='contain px-5 lg:px-20 py-[30px]'>
-                                    {question.answer}
-                                </div>
-                            </motion.div>
-                        </section>
-                    ))}
-                </section>
-            </div>
-        </div>
-    )
+  return (
+    <div className="flex flex-col items-center p-6">
+      <section className="container mt-16 max-w-4xl mx-auto pt-12">
+        <h2 className="text-xl lg:text-3xl font-extrabold text-green-900 text-center mb-8">FAQ</h2>
+        {questions.map((q, index) => (
+          <div key={index} className="mb-6">
+            <h2 className="text-xl font-semibold text-gray-800 mb-2">{q.question}</h2>
+            <p className="text-gray-600">{q.answer}</p>
+          </div>
+        ))}
+      </section>
+    </div>
+  );
 }
-
-export default FAQ

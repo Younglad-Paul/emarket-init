@@ -39,8 +39,8 @@ export default function Nav() {
             <a href="/faq" className="hover:text-yellow-500 flex items-center gap-2">
               FAQ
             </a>
-            <a href="/" className="hover:text-yellow-500 flex items-center gap-2">
-              Search
+            <a href="/news" className="hover:text-yellow-500 flex items-center gap-2">
+              News
             </a>
             <a href="/contact" className="hover:text-yellow-500 flex items-center gap-2">
               Contact us
@@ -83,8 +83,8 @@ export default function Nav() {
               <a href="/faq" className="hover:text-yellow-500 p-2">
                 FAQ
               </a>
-              <a href="/" className="hover:text-yellow-500 p-2">
-                Search
+              <a href="/news" className="hover:text-yellow-500 p-2">
+                News
               </a>
               <a href="/contact" className="hover:text-yellow-500 p-2">
                 Contact us
