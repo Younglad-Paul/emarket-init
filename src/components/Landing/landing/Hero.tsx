@@ -53,7 +53,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="w-full h-screen md:h-[80vh] text-white">
+    <section className="w-full h-screen md:h-[65vh] text-white">
       <Swiper
         modules={[Pagination, A11y, Autoplay ]}
         spaceBetween={0}
@@ -66,7 +66,7 @@ export default function Hero() {
         {slides.map((slide, index) => (
           <SwiperSlide
             key={index}
-            className="w-full h-screen md:h-[80vh]"
+            className="w-full h-screen md:h-[65vh]"
             style={{
               background: `url(${slide.img}) no-repeat center`,
               backgroundSize: 'cover',
