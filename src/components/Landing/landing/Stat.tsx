@@ -93,7 +93,7 @@ const Stat = () => {
             <div className="space-y-10 container p-4">
                 <section className="w-full grid grid-cols-1 items-center">
                     <div className="space-y-4 pb-4">
-                    <h2 className="text-xl lg:text-3xl font-extrabold text-green-900 text-center mb-8">Connecting Marketplaces</h2>
+                    <h2 className="text-xl lg:text-3xl font-extrabold text-green-900 mb-8">Connecting Marketplaces</h2>
                         <p className="leading-relaxed">
                         By effectively bridging the gap between businesses and regulatory authorities, we not only ensure fair and transparent tax compliance but also facilitate smoother communication and cooperation. This, in turn, enables better resource allocation, promoting sustainable growth and development within our communities, ultimately fostering a more prosperous and equitable society.
                         </p>

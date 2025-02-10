@@ -42,13 +42,13 @@ const DashboardHome = () => {
       name: "Store",
       icon: <Store size={30} />,
       stat: 120,
-      color: "bg-blue-700",
+      color: "bg-[#13802A]",
     },
     {
       name: "Store Owners",
       icon: <SquareUser size={30} />,
       stat: 75,
-      color: "bg-purple-700",
+      color: "bg-[#13802A]",
     },
   ];
 
@@ -107,10 +107,11 @@ const DashboardHome = () => {
             whileHover={{ scale: 1.05 }}
           >
             <div
-              className={`${card.color} grid p-6 h-48 rounded-xl font-bold text-white bg-opacity-90 backdrop-blur-sm border-2 border-opacity-20 border-white`}
+              className={`${card.color} grid p-10 h-48 rounded-xl font-bold text-white bg-opacity-90 backdrop-blur-sm border-2 border-opacity-20 border-white space-y-4`}
             >
               <div className="flex items-center gap-3 text-xl">
                 <span className="text-3xl">{card.icon}</span>
+
                 <span>{card.name}</span>
               </div>
               <div className="text-4xl font-bold mt-2">
@@ -150,7 +151,7 @@ const DashboardHome = () => {
               {selectedUsers.map((user, index) => (
                 <TableRow
                   key={index}
-                  className="border-b hover:bg-gray-100 transition-colors text-center"
+                  className="border-b hover:bg-gray-100 transition-colors"
                 >
                   <TableCell className="px-2 py-1 md:px-4 md:py-2 text-xs md:text-sm">
                     {user.reg}

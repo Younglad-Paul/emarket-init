@@ -64,7 +64,7 @@ const Owners = () => {
               {selectedUsers.map((user, index) => (
                 <TableRow
                   key={index}
-                  className="border-b hover:bg-gray-100 transition-colors text-center"
+                  className="border-b hover:bg-gray-100 transition-colors"
                 >
                   <TableCell className="px-2 py-1 md:px-4 md:py-2 text-xs md:text-sm">
                     {user.reg}

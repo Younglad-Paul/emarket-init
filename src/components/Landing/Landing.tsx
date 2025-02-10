@@ -6,7 +6,7 @@ import Stat from './landing/Stat'
 import Locate from './landing/Locate'
 import Assistance from './landing/Assistance'
 import News from './landing/News'
-import Signup from './landing/SignUp'
+// import Signup from './landing/SignUp'
 
 const Landing = () => {
   return (

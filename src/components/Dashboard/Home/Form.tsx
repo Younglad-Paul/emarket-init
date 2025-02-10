@@ -267,7 +267,7 @@ const Form = () => {
                     ))}
                 </div>
                 <div className="w-full justify-end flex my-4">
-                    <button onClick={handleAddBussiness} className="bg-blue-600 hover:bg-blue-500 text-white p-2 rounded-md flex items-center justify-center gap-2 "><Plus /> Add New Business</button>
+                    <div onClick={handleAddBussiness} className="bg-blue-600 hover:bg-blue-500 text-white p-2 rounded-md flex items-center justify-center gap-2 cursor-pointer"><Plus /> Add New Business</div>
                 </div>
                 <div className="w-full p-4">
                     <h2 className="text-xl italic">Next of Kin Information</h2>
