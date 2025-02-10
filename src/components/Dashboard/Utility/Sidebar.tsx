@@ -25,7 +25,7 @@ const Sidebar = () => {
         ))}
       </section>
       <div className="pt-40">
-        <Link to="/" className="w-full p-2 px-6 flex items-center gap-2">
+        <Link to="/login" className="w-full p-2 px-6 flex items-center gap-2">
           <LogOut /> LogOut
         </Link>
       </div>
