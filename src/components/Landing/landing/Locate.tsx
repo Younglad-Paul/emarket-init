@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import agent from "../../../public/landing4.jpg";
+import agent from "../../../public/friendly.jpg";
 
 const Locate = () => {
   return (

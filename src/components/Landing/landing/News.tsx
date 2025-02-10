@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import stat1 from '../../../public/landing5.jpg';
-import stat2 from '../../../public/landing1.jpg';
-import stat3 from '../../../public/landing4.jpg';
+import stat2 from '../../../public/coat_of_arm.webp';
+import stat3 from '../../../public/1530027123-4967.webp';
 
 interface NewsItem {
     id: string;

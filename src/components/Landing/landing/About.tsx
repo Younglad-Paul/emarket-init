@@ -1,4 +1,4 @@
-import agent from '../../../public/landing4.jpg';
+import agent from '../../../public/Peter-Mbah.webp';
 
 export default function About() {
     return (
@@ -6,7 +6,7 @@ export default function About() {
             <div className="container p-4 space-y-10">
                 <section className="w-full grid grid-cols-1 space-y-3 items-center">
                     <div className="space-y-6">
-                        <h2 className="text-xl lg:text-3xl font-bold">About Enugu North eMarket</h2>
+                    <h2 className="text-xl lg:text-3xl font-extrabold text-green-900 text-center mb-8">About Enugu North eMarket</h2>
                         <p className="lg:leading-relaxed">
                             Enugu eMarket is a dedicated platform designed to empower marketers in Enugu by providing seamless registration, valuable insights, and a community-driven network. Our mission is to foster innovation, collaboration, and data-driven decision-making within the marketing industry.
                         </p>
