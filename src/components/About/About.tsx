@@ -1,4 +1,4 @@
-import Image from "../../public/landing1.jpg"
+import Image from "../../public/logo.png"
 export default function AboutUs() {
   return (
     <div className="min-h-screen flex flex-col items-center p-6">

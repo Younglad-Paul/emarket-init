@@ -13,6 +13,7 @@ import Store from './Home/Store';
 import Profile from './Home/Profile';
 import EditProfile from './Home/EditProfile';
 import MobileNav from './Utility/MobileNav';
+import NigerianIDCard from './Card/Card';
 
 // const isAuthenticated = () => {
 //   return localStorage.getItem('authToken') !== null;
@@ -40,6 +41,7 @@ const DashbardLayout = () => {
             <Routes>
               <Route path="*" element={<Home />} />
               <Route path="form" element={<Form />} />
+              <Route path="card" element={<NigerianIDCard />} />
               <Route path="market" element={<Market />} />
               <Route path="registered-users" element={<Owners />} />
               <Route path="store" element={<Store />} />

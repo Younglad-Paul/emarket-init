@@ -1,5 +1,6 @@
 import { Check, Plus } from "lucide-react";
 import { useState } from "react";
+import { useNavigate, useNavigation } from "react-router-dom";
 
 type NewForm = {
     id: number;
@@ -62,9 +63,14 @@ const Form = () => {
             )
         );
     };
+    const route = useNavigate()
+
+    const handleSubmit = () => {
+        route("/dashboard/card")
+    }
 
     return (
-        <div className="w-full h-screen overflow-y-scroll p-4 pb-20">
+        <form onSubmit={handleSubmit} className="w-full h-screen overflow-y-scroll p-4 pb-20">
             <section className="w-full">
                 <div className="w-full py-4 border-b flex items-center justify-between">
                     <h1 className="text-3xl">Registeration Form</h1>
@@ -317,11 +323,11 @@ const Form = () => {
 
             </section>
             <div className="w-full flex justify-end my-10">
-                <button className="bg-[#13802A] hover:bg-green-800 p-2 rounded-md text-white flex items-center justify-center gap-2">
+                <button type="submit" className="bg-[#13802A] hover:bg-green-800 p-2 rounded-md text-white flex items-center justify-center gap-2">
                     <Check />Register
                 </button>
             </div>
-        </div>
+        </form>
     );
 }
 
