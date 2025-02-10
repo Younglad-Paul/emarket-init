@@ -31,7 +31,7 @@ export default function Action() {
     ];
 
     return (
-        <div className="container p-12 text-center text-lg py-20">
+        <div className="container p-12 text-center text-lg lg:py-20">
             <h2 className="text-4xl font-extrabold text-green-900 text-center">Business</h2>
             <p className="max-w-2xl mx-auto mb-8">
                 Experience Enugu State&apos;s online platform, facilitating efficient, transparent, 

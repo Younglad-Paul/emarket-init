@@ -34,7 +34,7 @@ const Owners = () => {
     const selectedUsers = users.slice(startIndex, startIndex + itemsPerPage);
 
   return (
-    <div className="w-full h-screen overflow-y-auto p-4 pb-20">
+    <div className="w-full h-screen overflow-y-auto p-4 pb-40">
       <section className="w-full space-y-4">
         {/* Header Section */}
         <div className="w-full flex items-center justify-between">

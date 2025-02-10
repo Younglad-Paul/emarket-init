@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function EditProfile() {
 
     return (
-        <div className="w-full h-screen overflow-y-scroll p-4 pb-20">
+        <div className="w-full h-screen overflow-y-scroll p-4 pb-40">
             <section className="w-full">
             <div className="w-full py-4 border-b flex items-center justify-between">
                     <h1 className="text-3xl">Field Agent&apos;s Information</h1>

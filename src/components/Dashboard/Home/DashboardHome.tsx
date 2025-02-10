@@ -94,7 +94,7 @@ const DashboardHome = () => {
   const selectedUsers = users.slice(startIndex, startIndex + itemsPerPage);
 
   return (
-    <div className="w-full h-screen overflow-y-scroll p-4 pb-20">
+    <div className="w-full h-screen overflow-y-scroll p-4 pb-40">
       <section className="grid lg:grid-cols-3 gap-6">
         {Cards.map((card, index) => (
           <motion.div

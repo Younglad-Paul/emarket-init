@@ -29,7 +29,7 @@ const Store = () => {
   const selectedUsers = users.slice(startIndex, startIndex + itemsPerPage);
 
   return (
-    <div className="w-full h-screen overflow-y-scroll p-4 pb-20">
+    <div className="w-full h-screen overflow-y-scroll p-4 pb-40">
       <section className="w-full space-y-4">
         <div className="w-full flex items-center justify-between">
           <h1 className="text-xl lg:text-3xl">Registered Stores</h1>
