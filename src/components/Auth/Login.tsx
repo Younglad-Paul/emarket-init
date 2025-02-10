@@ -10,15 +10,13 @@ const Login = () => {
 
   return (
     <div className='min-h-screen grid lg:grid-cols-2'>
-      {/* Background Image Section */}
       <section className='hidden lg:block' style={{ background: `url(${Image}) no-repeat`, backgroundSize: 'cover' }}>
       </section>
 
-      {/* Login Form Section */}
       <section className='p-4 lg:p-10 flex items-center justify-center bg-gray-50'>
         <div className="w-full max-w-md">
           <section className="bg-white shadow-lg rounded-lg p-6 lg:p-8">
-            <div className="flex justify-center mb-6">
+            <div className="flex justify-center mb-6 lg:hidden">
               <img src={Logo} alt="Enugu eMarket Logo" className="w-32 lg:w-40" />
             </div>
 

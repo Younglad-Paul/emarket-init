@@ -29,21 +29,20 @@ export default function Nav() {
       >
         <div className="container p-2 flex items-center justify-between">
           <img src={logo} alt="Logo" className="w-16" />
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-10 p-2 px-6 rounded-md">
             <a href="/" className="hover:text-yellow-500 flex items-center gap-2">
               Home
             </a>
-            <a href="/" className="hover:text-yellow-500 flex items-center gap-2">
+            <a href="/about" className="hover:text-yellow-500 flex items-center gap-2">
               About
             </a>
-            <a href="/" className="hover:text-yellow-500 flex items-center gap-2">
+            <a href="/faq" className="hover:text-yellow-500 flex items-center gap-2">
               FAQ
             </a>
             <a href="/" className="hover:text-yellow-500 flex items-center gap-2">
               Search
             </a>
-            <a href="/" className="hover:text-yellow-500 flex items-center gap-2">
+            <a href="/contact" className="hover:text-yellow-500 flex items-center gap-2">
               Contact us
             </a>
             <a href="/login" className="flex items-center gap-2 bg-yellow-600 hover:bg-yellow-400 p-2 px-4 text-green rounded-lg">
@@ -51,7 +50,6 @@ export default function Nav() {
               Login
             </a>
           </div>
-          {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsMenuOpen(true)} 
             className='flex lg:hidden'
@@ -60,7 +58,6 @@ export default function Nav() {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         <motion.div 
           className={`fixed top-0 right-0 h-full w-8/12 bg-[#13802AFF] z-50 lg:hidden`}
           initial={{ x: '100%' }}
@@ -80,16 +77,16 @@ export default function Nav() {
               <a href="/" className="hover:text-yellow-500 p-2">
                 Home
               </a>
-              <a href="/" className="hover:text-yellow-500 p-2">
+              <a href="/about" className="hover:text-yellow-500 p-2">
                 About
               </a>
-              <a href="/" className="hover:text-yellow-500 p-2">
+              <a href="/faq" className="hover:text-yellow-500 p-2">
                 FAQ
               </a>
               <a href="/" className="hover:text-yellow-500 p-2">
                 Search
               </a>
-              <a href="/" className="hover:text-yellow-500 p-2">
+              <a href="/contact" className="hover:text-yellow-500 p-2">
                 Contact us
               </a>
               <a 
@@ -103,7 +100,6 @@ export default function Nav() {
           </div>
         </motion.div>
 
-        {/* Overlay */}
         {isMenuOpen && (
           <motion.div
             initial={{ opacity: 0 }}

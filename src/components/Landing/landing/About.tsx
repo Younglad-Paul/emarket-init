@@ -2,9 +2,9 @@ import agent from '../../../public/landing4.jpg';
 
 export default function About() {
     return (
-        <div className="w-full flex items-center justify-center lg:py-16 bg-[#13802AFF] text-white text-justify">
+        <div className="w-full lg:py-10 text-black text-justify">
             <div className="container p-4 space-y-10">
-                <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 items-center">
+                <section className="w-full grid grid-cols-1 space-y-3 items-center">
                     <div className="space-y-6">
                         <h2 className="text-xl lg:text-3xl font-bold">About Enugu North eMarket</h2>
                         <p className="lg:leading-relaxed">
@@ -15,7 +15,7 @@ export default function About() {
                         </p>
                     </div>
                     <div className="flex justify-center">
-                        <div className="w-full bg-gray-300 rounded-md overflow-hidden">
+                        <div className="w-full bg-gray-300 w-full h-60 lg:h-96 rounded-md overflow-hidden">
                             <img src={agent} alt="Agent" className="w-full h-full object-cover" />
                         </div>
                     </div>

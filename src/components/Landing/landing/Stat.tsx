@@ -89,15 +89,15 @@ const Stat = () => {
     ];
 
     return (
-        <div className="w-full flex items-center justify-center lg:p-10 py-10 bg-[#13802AFF] text-white">
+        <div className="w-full py-10 text-black">
             <div className="space-y-10 container p-4">
-                <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-24 items-center">
-                    <div className="space-y-4">
+                <section className="w-full grid grid-cols-1 items-center">
+                    <div className="space-y-4 pb-4">
                         <h2 className="text-xl lg:text-3xl font-bold">Connecting Marketplaces</h2>
                         <p className="leading-relaxed">
-                            By bridging the gap between businesses and authorities, we ensure fair tax compliance and enable better resource allocation for the development of our communities.
+                        By effectively bridging the gap between businesses and regulatory authorities, we not only ensure fair and transparent tax compliance but also facilitate smoother communication and cooperation. This, in turn, enables better resource allocation, promoting sustainable growth and development within our communities, ultimately fostering a more prosperous and equitable society.
                         </p>
-                        <div className="flex text-md lg:text-xl">
+                        <div className="flex text-lg lg:text-xl">
                             <p>
                                 <span className="text-green-500">
                                     <Counter stat={10452} duration={2000} />+
@@ -107,7 +107,7 @@ const Stat = () => {
                                 </span> local markets
                             </p>
                         </div>
-                        <button className="p-3 px-6 bg-white text-green-900 font-semibold rounded-lg hover:bg-gray-200 transition">
+                        <button className="p-3 px-6 bg-[#13802AFF] text-white font-semibold rounded-lg hover:bg-green-900 transition">
                             Register Now
                         </button>
                     </div>

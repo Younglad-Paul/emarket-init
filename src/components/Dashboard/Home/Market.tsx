@@ -81,7 +81,7 @@ const Market =()=> {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
-            <div className={`bg-black grid p-4 py-6 h-60 rounded-lg font-bold text-white border border-green-500 bg-opacity-80 text-md flex items-center`}>
+            <div className={`bg-black grid p-4 py-6 h-60 rounded-lg font-bold text-white border border-green-500 bg-opacity-80 text-lg flex items-center`}>
               <div className="flex items-center gap-2 font-semibold">{card.icon} {card.name}</div>
               <Counter stat={card.stat} />
             </div>

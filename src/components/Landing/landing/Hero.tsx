@@ -84,7 +84,7 @@ export default function Hero() {
                   {slide.title}
                 </motion.h1>
                 <motion.p
-                  className="text-md"
+                  className="text-lg"
                   initial="hidden"
                   animate="visible"
                   variants={textVariants}

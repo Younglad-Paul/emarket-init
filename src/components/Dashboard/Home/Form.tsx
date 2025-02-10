@@ -14,7 +14,20 @@ type NewForm = {
 };
 
 const Form = () => {
-    const [bussiness, setBusinessForm] = useState<NewForm[]>([]);
+    const [bussiness, setBusinessForm] = useState<NewForm[]>([
+        {
+            id: 1,
+            name: "",
+            type: "",
+            email: "",
+            hotline1: "",
+            hotline2: "",
+            address: "",
+            town: "",
+            lga: "",
+        }
+    ]);
+    
 
     const handleAddBussiness = () => {
         const newBusiness: NewForm = {

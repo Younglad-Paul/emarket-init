@@ -5,6 +5,9 @@ import Landing from "./components/Landing/Landing";
 import Footer from "./components/Navs/Footer";
 import Login from "./components/Auth/Login";
 import DashbardLayout from './components/Dashboard/DashboardLayout'
+import AboutUs from "./components/About/About";
+import ContactUs from "./components/Contact/Contact";
+import FAQ from "./components/FAQ/FAQ";
 
 const App = () => {
   return (
@@ -16,6 +19,30 @@ const App = () => {
           <>
           <Nav />
           <Landing />
+          <Footer />
+          </>
+          } 
+          />
+          <Route path="/about" element={
+          <>
+          <Nav />
+          <AboutUs />
+          <Footer />
+          </>
+          } 
+          />
+          <Route path="/faq" element={
+          <>
+          <Nav />
+          <FAQ />
+          <Footer />
+          </>
+          } 
+          />
+          <Route path="/contact" element={
+          <>
+          <Nav />
+          <ContactUs />
           <Footer />
           </>
           } 

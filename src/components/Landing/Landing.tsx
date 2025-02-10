@@ -10,18 +10,20 @@ import Signup from './landing/SignUp'
 
 const Landing = () => {
   return (
-    <div className='bg-gray-50 text-sm lg:text-md'>
-        <Hero />
-        <Action />
-        <About />
+    <div className='bg-gray-50 text-sm lg:text-lg'>
+      <Hero />
+      <Action />
       <div className='p-10 container grid grid-cols-1 lg:grid-cols-2 gap-10'>
-      <FAQ />
-      <News />
+        <About />
+        <Stat />
       </div>
       <Locate />
+      <div className='p-10 container grid grid-cols-1 lg:grid-cols-2 gap-10'>
+        <FAQ />
+        <News />
+      </div>
       <Assistance />
-      <Stat />
-      <Signup />
+      {/* <Signup /> */}
     </div>
   )
 }
