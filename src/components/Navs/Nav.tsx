@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import logo from '../../public/logo.png';
 import { LogIn, Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Nav() {
   const [scrolling, setScrolling] = useState(false);
@@ -30,8 +30,9 @@ export default function Nav() {
         }`}
       >
         <div className="container p-2 flex items-center justify-between">
-          <img src={logo} alt="Logo" className="w-16" />
+          <Link to="/"> <img src={logo} alt="Logo" className="w-16" /> </Link>
           <div className="hidden lg:flex items-center gap-10 p-2 px-6 rounded-md">
+
             <a href="/" className={`hover:text-yellow-500 flex items-center gap-2 ${path.pathname === '/' ? 'text-yellow-500' : ''}`}>
               Home
             </a>

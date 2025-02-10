@@ -130,7 +130,7 @@ const DashboardHome = () => {
               <input type="text" placeholder="Search..." className="border border-green-900 p-2 rounded-md focus:outline-none" />
               <Search className="text-white cursor-pointer" />
             </div>
-            <Link to="/form" className="bg-[#13802A] hover:bg-green-800 p-2 text-white flex items-center justify-center rounded-md">
+            <Link to="/dashboard/form" className="bg-[#13802A] hover:bg-green-800 p-2 text-white flex items-center justify-center rounded-md">
               <Plus />
               <p className="hidden md:flex">Register Owner</p>
             </Link>
