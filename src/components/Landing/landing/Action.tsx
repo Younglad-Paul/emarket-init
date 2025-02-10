@@ -57,7 +57,7 @@ export default function Action() {
                                 {card.image}
                             </div>
                         </div>
-                        <p className="hidden lg:block text-sm font-medium text-gray-400">{card.text}</p>
+                        <p className="text-sm font-medium text-gray-400">{card.text}</p>
                     </motion.div>
                 ))}
             </div>
