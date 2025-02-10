@@ -1,5 +1,5 @@
-import { Plus, Printer } from "lucide-react";
-import React, { useState } from "react";
+import { Printer } from "lucide-react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const NigerianIDCard = () => {
@@ -13,7 +13,7 @@ const NigerianIDCard = () => {
             <p className="hidden md:flex">Print</p>
         </Link>
         </div>
-    <section className="flex lg:items-center lg:justify-center m-40 -mx-12 lg:my-20 ">
+    <section className="flex lg:items-center lg:justify-center m-28 -mx-24 lg:my-20 ">
       <div
         className="w-[500px] h-[330px] bg-green-200 border border-gray-400 rounded-lg shadow-xl p-6 relative cursor-pointer rotate-90 lg:rotate-0"
         onClick={() => setShowBack(!showBack)}
@@ -30,7 +30,6 @@ const NigerianIDCard = () => {
             <p className="text-xs text-gray-600 mt-1">© ESMIC Nigeria</p>
           </div>
         ) : (
-          // Front of the Card
           <>
             <div className="text-green-800 font-bold text-xl text-center">
               FEDERAL REPUBLIC OF NIGERIA
@@ -49,9 +48,9 @@ const NigerianIDCard = () => {
               <p>SEX: <span className="font-normal">M</span> HEIGHT: <span className="font-normal">176cm</span></p>
             </div>
 
-            <div className="mt-4 text-lg font-bold text-gray-800 tracking-wider text-center">
-              7212 2678 4245 0618
-            </div>
+            <div className="mt-2 sm:mt-3 md:mt-4 font-bold text-gray-800 text-center text-4xl tracking-widest">
+                7212 2678 4245 0618
+              </div>
 
             <div className="flex justify-between items-center mt-4 text-xs text-gray-700">
               <span className="font-semibold">ESMIC</span>
