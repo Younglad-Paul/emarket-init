@@ -24,10 +24,11 @@ const NewsPage = () => {
       <header className="w-full bg-[#13802AFF] text-white py-16 text-center rounded-2xl shadow-lg mb-10">
         <div className="container">
           <h1 className="text-4xl font-bold mb-4">Latest News</h1>
-          <p className="text-lg max-w-2xl mx-auto">
+          <p className="lg:text-lg max-w-2xl mx-auto">
             Find answers to common questions about Enugu eMarket and how it works.
           </p>
         </div>
+
       </header>
       <div className="container flex flex-wrap gap-3 justify-center">
         {categories.map((category) => (

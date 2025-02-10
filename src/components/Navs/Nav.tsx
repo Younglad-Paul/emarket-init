@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import logo from '../../public/logo.png';
 import { LogIn, Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 
 export default function Nav() {
   const [scrolling, setScrolling] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const path = useLocation();
 
   const handleScroll = () => {
     if (window.scrollY >= window.innerHeight) {
@@ -30,21 +32,28 @@ export default function Nav() {
         <div className="container p-2 flex items-center justify-between">
           <img src={logo} alt="Logo" className="w-16" />
           <div className="hidden lg:flex items-center gap-10 p-2 px-6 rounded-md">
-            <a href="/" className="hover:text-yellow-500 flex items-center gap-2">
+            <a href="/" className={`hover:text-yellow-500 flex items-center gap-2 ${path.pathname === '/' ? 'text-yellow-500' : ''}`}>
               Home
             </a>
-            <a href="/about" className="hover:text-yellow-500 flex items-center gap-2">
+            <a href="/about" className={`hover:text-yellow-500 flex items-center gap-2 ${path.pathname === '/about' ? 'text-yellow-500' : ''}`}>
               About
             </a>
-            <a href="/faq" className="hover:text-yellow-500 flex items-center gap-2">
+
+
+            <a href="/faq" className={`hover:text-yellow-500 flex items-center gap-2 ${path.pathname === '/faq' ? 'text-yellow-500' : ''}`}>
               FAQ
             </a>
-            <a href="/news" className="hover:text-yellow-500 flex items-center gap-2">
+
+
+            <a href="/news" className={`hover:text-yellow-500 flex items-center gap-2 ${path.pathname === '/news' ? 'text-yellow-500' : ''}`}>
               News
             </a>
-            <a href="/contact" className="hover:text-yellow-500 flex items-center gap-2">
+
+
+            <a href="/contact" className={`hover:text-yellow-500 flex items-center gap-2 ${path.pathname === '/contact' ? 'text-yellow-500' : ''}`}>
               Contact us
             </a>
+
             <a href="/login" className="flex items-center gap-2 bg-yellow-600 hover:bg-yellow-400 p-2 px-4 text-green rounded-lg">
               <LogIn />
               Login
@@ -74,19 +83,21 @@ export default function Nav() {
               </button>
             </div>
             <div className="flex flex-col space-y-6 mt-8">
-              <a href="/" className="hover:text-yellow-500 p-2">
+              <a href="/" className={`hover:text-yellow-500 p-2 ${path.pathname === '/' ? 'text-yellow-500' : ''}`}>
                 Home
               </a>
-              <a href="/about" className="hover:text-yellow-500 p-2">
+              <a href="/about" className={`hover:text-yellow-500 p-2 ${path.pathname === '/about' ? 'text-yellow-500' : ''}`}>
                 About
               </a>
-              <a href="/faq" className="hover:text-yellow-500 p-2">
+              <a href="/faq" className={`hover:text-yellow-500 p-2 ${path.pathname === '/faq' ? 'text-yellow-500' : ''}`}>
+
                 FAQ
               </a>
-              <a href="/news" className="hover:text-yellow-500 p-2">
+              <a href="/news" className={`hover:text-yellow-500 p-2 ${path.pathname === '/news' ? 'text-yellow-500' : ''}`}>
                 News
               </a>
-              <a href="/contact" className="hover:text-yellow-500 p-2">
+              <a href="/contact" className={`hover:text-yellow-500 p-2 ${path.pathname === '/contact' ? 'text-yellow-500' : ''}`}>
+
                 Contact us
               </a>
               <a 

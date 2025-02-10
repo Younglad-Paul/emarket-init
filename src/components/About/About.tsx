@@ -5,7 +5,7 @@ export default function AboutUs() {
       <header className="w-full bg-[#13802AFF] text-white py-16 text-center rounded-2xl shadow-lg mb-28">
         <div className="container">
         <h1 className="text-4xl font-bold mb-4">Welcome to Enugu eMarket</h1>
-        <p className="text-lg max-w-2xl mx-auto">
+        <p className="lg:text-lg max-w-2xl mx-auto">
           Empowering marketers in Enugu with seamless registration, valuable insights, and a thriving community network.
         </p>
         </div>

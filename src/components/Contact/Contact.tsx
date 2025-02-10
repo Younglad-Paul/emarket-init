@@ -6,7 +6,7 @@ export default function ContactUs() {
       <header className="w-full bg-[#13802AFF] text-white py-16 text-center rounded-2xl shadow-lg mb-28">
         <div className="container">
         <h1 className="text-4xl font-bold mb-4">Get in Touch with Us</h1>
-        <p className="text-lg max-w-2xl mx-auto">
+        <p className="lg:text-lg max-w-2xl mx-auto">
           Have questions or need assistance? Reach out to us and we’ll be happy to help!
         </p>
         </div>

@@ -1,7 +1,7 @@
 import { Menu, User, LogOut } from "lucide-react";
 import { useState } from "react";
 import Logo from '../../../public/logo.png'
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 interface HeaderProps {
   isNav: boolean;
@@ -9,7 +9,6 @@ interface HeaderProps {
 }
 
 const Header = ({ isNav, setIsNav }: HeaderProps) => {
-  const navigate = useNavigate();
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
