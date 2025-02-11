@@ -3,7 +3,7 @@ import agent from "../../../public/friendly.jpg";
 
 const Locate = () => {
   return (
-    <div className="w-full flex items-center justify-center py-8 lg:py-16 bg-[#13802AFF] text-white text-justify">
+    <div className="w-full flex items-center justify-center py-8 lg:py-16 bg-[#13802AFF] text-white">
       <div className="container p-4 space-y-10">
         <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 items-center">
           <div className="flex justify-center">
@@ -12,7 +12,7 @@ const Locate = () => {
             </div>
           </div>
           <motion.div 
-            className="space-y-6 text-justify order-first lg:order-last"
+            className="space-y-6 order-first lg:order-last"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

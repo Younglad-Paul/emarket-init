@@ -13,9 +13,11 @@ const Landing = () => {
     <div className='bg-gray-50 text-sm lg:text-lg'>
       <Hero />
       <Action />
-      <div className='lg:p-10 container grid grid-cols-1 lg:grid-cols-2 lg:gap-10'>
-        <About />
-        <Stat />
+      <div className='container mx-auto py-16'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 p-4'>
+          <About />
+          <Stat />
+        </div>
       </div>
       <Locate />
       <div className='lg:p-10 container grid grid-cols-1 lg:grid-cols-2 lg:gap-10'>

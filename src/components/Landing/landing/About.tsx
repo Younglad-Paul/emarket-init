@@ -1,25 +1,37 @@
+import { Pagination, A11y, Autoplay, EffectFade } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
+
 import agent from '../../../public/Peter-Mbah.webp';
 
 export default function About() {
     return (
-        <div className="w-full lg:py-10 text-black text-justify">
-            <div className="container p-4 space-y-10">
-                <section className="w-full grid grid-cols-1 space-y-3 items-center">
-                    <div className="space-y-6">
-                    <h2 className="text-xl lg:text-3xl font-extrabold text-green-900 mb-8">About Enugu North eMarket</h2>
-                        <p className="lg:leading-relaxed">
-                            Enugu eMarket is a dedicated platform designed to empower marketers in Enugu by providing seamless registration, valuable insights, and a community-driven network. Our mission is to foster innovation, collaboration, and data-driven decision-making within the marketing industry.
-                        </p>
-                        <p className="leading-relaxed">
-                            Enugu eMarket is dedicated to supporting the local economy by providing a comprehensive and reliable census database for marketers. This empowers informed decision-making and strategic planning for business growth and development. Our platform ensures that every marketer, regardless of experience, has the tools and resources needed to thrive.
-                        </p>
-                    </div>
-                    <div className="flex justify-center">
-                        <div className="w-full bg-gray-300 w-full h-60 lg:h-96 rounded-md overflow-hidden">
-                            <img src={agent} alt="Agent" className="w-full h-full object-cover" />
-                        </div>
-                    </div>
-                </section>
+        <div className="relative w-full h-full bg-white rounded-lg overflow-hidden shadow-sm">
+            <div className="h-[300px] relative overflow-hidden">
+                <img 
+                    src={agent} 
+                    alt="Enugu Market" 
+                    className="w-full h-full object-cover"
+                />
+            </div>
+            <div className="p-6">
+                <h2 className="text-xl lg:text-2xl font-bold text-green-800 mb-4">
+                    Explore Enugu
+                </h2>
+                <p className="text-base text-gray-600 leading-relaxed mb-4">
+                    Enugu eMarket is a dedicated platform designed to empower marketers 
+                    in Enugu by providing seamless registration, valuable insights, and 
+                    a community-driven network.
+                </p>
+                <p className="text-base text-gray-600 leading-relaxed mb-6">
+                    Our mission is to foster innovation and support the local economy 
+                    through a comprehensive and reliable census database for marketers.
+                </p>
+                <button className="px-6 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors">
+                    Our History
+                </button>
             </div>
         </div>
     );

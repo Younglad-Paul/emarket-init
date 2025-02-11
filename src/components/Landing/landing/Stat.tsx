@@ -2,7 +2,6 @@ import { Pagination, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 import { useEffect, useState, useRef } from 'react';
 
 import stat1 from '../../../public/landing5.jpg';
@@ -83,51 +82,73 @@ const Stat = () => {
             name: 'market 2',
         },
         {
-            image: stat3 ,
+            image: stat3,
             name: 'market 3',
         },
     ];
 
     return (
-        <div className="w-full py-10 text-black">
-            <div className="space-y-10 container p-4">
-                <section className="w-full grid grid-cols-1 items-center">
-                    <div className="space-y-4 pb-4">
-                    <h2 className="text-xl lg:text-3xl font-extrabold text-green-900 mb-8">Connecting Marketplaces</h2>
-                        <p className="leading-relaxed">
-                        By effectively bridging the gap between businesses and regulatory authorities, we not only ensure fair and transparent tax compliance but also facilitate smoother communication and cooperation. This, in turn, enables better resource allocation, promoting sustainable growth and development within our communities, ultimately fostering a more prosperous and equitable society.
+        <div className="relative w-full h-full bg-white rounded-lg overflow-hidden shadow-sm">
+            <div className="h-[300px] relative overflow-hidden">
+                <Swiper
+                    modules={[Pagination, A11y, Autoplay]}
+                    spaceBetween={0}
+                    slidesPerView={1}
+                    pagination={{ clickable: true }}
+                    autoplay={{ 
+                        delay: 5000, 
+                        disableOnInteraction: false 
+                    }}
+                    loop={true}
+                    className="w-full h-full"
+                    style={{
+                        '--swiper-pagination-color': '#16a34a',
+                        '--swiper-pagination-bullet-inactive-color': '#999999',
+                        '--swiper-pagination-bullet-inactive-opacity': '0.5',
+                        '--swiper-pagination-bullet-size': '8px',
+                        '--swiper-pagination-bullet-horizontal-gap': '6px'
+                    } as React.CSSProperties}
+                >
+                    {Gallery.map((gallery, index) => (
+                        <SwiperSlide key={index} className="w-full h-full">
+                            <img 
+                                src={gallery.image} 
+                                alt={gallery.name} 
+                                className="w-full h-full object-cover"
+                            />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+            <div className="p-6">
+                <h2 className="text-xl lg:text-2xl font-bold text-green-800 mb-4">
+                    Projects
+                </h2>
+                <div className="text-base text-gray-600 leading-relaxed mb-6">
+                        <p>
+                            By effectively bridging the gap between businesses and regulatory authorities, 
+                            we ensure fair and transparent tax compliance, facilitate smoother communication and cooperation. 
+                            This, in turn, enables better resource allocation, promoting sustainable growth and development within our communities, 
+                            ultimately fostering a more prosperous and equitable society.
                         </p>
-                        <div className="flex text-lg lg:text-xl">
-                            <p>
-                                <span className="text-green-500">
-                                    <Counter stat={10452} duration={2000} />+
-                                </span> businesses registered across{' '}
-                                <span className="text-green-500">
-                                    <Counter stat={27} duration={1500} />
-                                </span> local markets
+                    <div className="lg:flex items-center gap-2 mt-4">
+                        <p>
+                            <span className="text-xl font-semibold text-green-600">
+                            <Counter stat={10452} duration={2000} />+ 
+                            </span>
+                            registered businesses in
+                        </p>
+                        <p>
+                            <span className="text-xl font-semibold text-green-600">
+                            <Counter stat={27} duration={1500} /> 
+                            </span> 
+                             local markets
                             </p>
-                        </div>
-                        <button className="p-3 px-6 bg-[#13802AFF] text-white font-semibold rounded-lg hover:bg-green-900 transition">
-                            Register Now
-                        </button>
                     </div>
-                    <div>
-                        <Swiper
-                            modules={[Pagination, A11y, Autoplay]}
-                            spaceBetween={50}
-                            slidesPerView={1}
-                            pagination={{ clickable: true }}
-                            autoplay={{ delay: 5000, disableOnInteraction: false }}
-                            loop={true}
-                            className='rounded-md'
-                        >
-                            {Gallery.map((gallery, index) => (
-                                <SwiperSlide key={index} className='w-full h-60 lg:h-96' style={{background: `url(${gallery.image}) no-repeat`, backgroundSize: 'cover'}} />
-                                
-                            ))}
-                        </Swiper>
-                    </div>
-                </section>
+                </div>
+                <button className="px-6 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors">
+                    Projects
+                </button>
             </div>
         </div>
     );
