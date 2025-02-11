@@ -44,9 +44,9 @@ const FAQ = () => {
     };
 
     return (
-      <div className="bg-gray-100 min-h-screen flex flex-col items-center p-6">
-          <header className="w-full bg-[#13802AFF] text-white py-16 text-center rounded-2xl shadow-lg mb-10">
-        <div className="container">
+      <div className="bg-gray-100 min-h-screen flex flex-col items-center">
+      <header className="w-full bg-[#0a3413] text-white py-20 text-center  shadow-lg mb-4 lg:mb-28">
+      <div className="container">
         <h1 className="text-4xl font-bold mb-4">Frequently Asked Questions</h1>
         <p className="lg:text-lg max-w-2xl mx-auto">
           Find answers to common questions about Enugu eMarket and how it works.

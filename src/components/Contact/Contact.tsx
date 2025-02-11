@@ -2,9 +2,9 @@ import Image from "../../public/landing1.jpg"
 
 export default function ContactUs() {
   return (
-    <div className="min-h-screen flex flex-col items-center p-6">
-      <header className="w-full bg-[#13802AFF] text-white py-16 text-center rounded-2xl shadow-lg mb-4 lg:mb-28">
-        <div className="container">
+    <div className="min-h-screen flex flex-col items-center ">
+      <header className="w-full bg-[#0a3413] text-white py-20 text-center  shadow-lg mb-4 lg:mb-28">
+      <div className="container">
         <h1 className="text-4xl font-bold mb-4">Get in Touch with Us</h1>
         <p className="lg:text-lg max-w-2xl mx-auto">
           Have questions or need assistance? Reach out to us and we’ll be happy to help!
